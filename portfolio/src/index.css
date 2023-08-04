@@ -13,6 +13,26 @@ code {
 }
 
 /* NAVBAR STYLES */
+nav.bg.navbar.navbar.navbar-expand-lg.navbar-light {
+  background-color: rgb(28, 32, 27);
+  padding: 0px;
+}
+
 .navbar-container.container {
     margin: 0px;
+    padding: 0px;
+}
+
+a.brand.navbar-brand {
+  font-size: 50px;
+  font-weight: 800;
+  color: white;
+  background-color: black;
+  margin-right: 80px;
+  padding-left: 30px;
+  padding-right: 50px;
+}
+
+a.nav-link {
+    color: white;
 }
