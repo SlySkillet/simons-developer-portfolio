@@ -12,6 +12,26 @@ code {
     monospace;
 }
 
+/* div{
+  border: solid, 1px, red;
+
+} */
+
+div#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color:  rgb(40, 44, 39);
+}
+
+.navbar-container {
+  flex: 1;
+}
+
+.container {
+  flex: 2;
+}
+
 /* NAVBAR STYLES */
 nav.bg.navbar.navbar.navbar-expand-lg.navbar-light {
   background-color: rgb(28, 32, 27);
@@ -33,6 +53,6 @@ a.brand.navbar-brand {
   padding-right: 50px;
 }
 
-a.nav-link {
+a.nav-link, p {
     color: white;
 }
