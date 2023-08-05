@@ -17,24 +17,35 @@ code {
 
 } */
 
-div#root {
+* {
+  border: 1px solid red ;
+}
+
+/* div#root {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   background-color:  rgb(40, 44, 39);
-}
+} */
 
-.navbar-container {
+
+/* .navbar-container {
   flex: 1;
 }
 
 .container {
   flex: 2;
+} */
+
+.grid-container{
+  display: grid;
+  height: 100vh;
+  grid-template-rows: 1fr 1fr 1fr;
 }
 
 /* NAVBAR STYLES */
 nav.bg.navbar.navbar.navbar-expand-lg.navbar-light {
-  background-color: rgb(28, 32, 27);
+  /* background-color: rgb(28, 32, 27); */
   padding: 0px;
 }
 
@@ -46,13 +57,13 @@ nav.bg.navbar.navbar.navbar-expand-lg.navbar-light {
 a.brand.navbar-brand {
   font-size: 50px;
   font-weight: 800;
-  color: white;
-  background-color: black;
+  /* color: white; */
+  /* background-color: black; */
   margin-right: 80px;
   padding-left: 30px;
   padding-right: 50px;
 }
 
-a.nav-link, p {
+/* a.nav-link, p {
     color: white;
-}
+} */

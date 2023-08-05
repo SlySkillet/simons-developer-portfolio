@@ -5,6 +5,7 @@ import About from './About'
 
 function App() {
   return (
+<div className="grid-container">
     <BrowserRouter>
       <NavBar />
       <div className="container">
@@ -13,6 +14,7 @@ function App() {
         </Routes>
       </div>
     </BrowserRouter>
+</div>
   );
 }
 
