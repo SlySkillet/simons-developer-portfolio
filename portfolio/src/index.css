@@ -56,3 +56,9 @@ a.brand.navbar-brand {
 a.nav-link, p {
     color: white;
 }
+
+/* ABOUT STYLES */
+
+.about-content{
+  color: white;
+}
