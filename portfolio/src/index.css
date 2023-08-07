@@ -47,11 +47,13 @@ code {
 nav.bg.navbar.navbar.navbar-expand-lg.navbar-light {
   /* background-color: rgb(28, 32, 27); */
   padding: 0px;
+  height: 92px;
 }
 
 .navbar-container.container {
     margin: 0px;
     padding: 0px;
+    height: 92px;
 }
 
 a.brand.navbar-brand {
