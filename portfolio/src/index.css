@@ -106,3 +106,7 @@ p.about-content.bio {
   margin-top: 20px;
   grid-column: 2 / 3;
 }
+
+p.sub-text {
+  grid-column: 1 / 3;
+}
