@@ -12,11 +12,6 @@ code {
     monospace;
 }
 
-/* div{
-  border: solid, 1px, red;
-
-} */
-
 .grid-container{
   display: grid;
   height: 100vh;
@@ -52,16 +47,13 @@ a.brand.navbar-brand {
   font-size: 50px;
   font-weight: 900;
   color: white;
-  /* color: rgb(165, 241, 234); */
   text-shadow:  -5px 1px coral;
-  /* text-shadow:  -5px 1px rgb(245, 79, 18); */
   background-color: black;
   margin-right: 80px;
   padding-left: 50px;
   padding-right: 50px;
   height: 92px;
 }
-/* -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black, */
 
 a.nav-link, p {
     color: white;
@@ -92,7 +84,6 @@ h1.about-content.name {
 h1.about-content.name::first-letter{
   color: white;
   text-shadow:  -5px 1px coral;
-  /* text-shadow:  -5px 1px rgb(245, 79, 18); */
 }
 
 h5.about-content.profession {
