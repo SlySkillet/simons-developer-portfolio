@@ -67,14 +67,15 @@ a.brand.navbar-brand {
 
 .about-container{
   display: grid;
-  grid-template-columns: 125px 30px 1fr 125px;
+  grid-template-columns: 15px 30px 1fr 15px;
   background-color: rgb(34,34,34);
   border: rgb(82, 82, 82) 1px solid;
-  padding-top: 20px;
+  padding-top: 0px;
 }
 .about-content-name-container {
   display: flex;
-  grid-column: 3 / 5
+  grid-column: 2 / 5;
+  margin-left: 10px;
 }
 
 h1.about-content.name {
@@ -92,6 +93,7 @@ h1.about-content.name::first-letter{
 
 h5.about-content.profession {
   grid-column: 3 / 5;
+  margin-bottom: 2px;
 }
 
 p.about-content.bio {
@@ -99,12 +101,14 @@ p.about-content.bio {
   border: rgb(82, 82, 82) 1px solid;
   padding: 8px;
   padding-left: 15px;
-  margin-top: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
   grid-column: 2 / 4;
 }
 
 p.sub-text {
   grid-column: 3 / 5;
+  margin-bottom: 5px;
 }
 
 /* FONT */
