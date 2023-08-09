@@ -15,8 +15,8 @@ code {
 .grid-container{
   display: grid;
   height: 100vh;
-  grid-template-rows: 92px 100px 1fr 50px;
-  grid-template-columns: 100px 1fr 1fr 1fr 50px;
+  grid-template-rows: 92px 60px 1fr 50px;
+  grid-template-columns: 100px 1fr 1.5fr .5fr 50px;
   background-color: coral;
 }
 
@@ -67,9 +67,10 @@ a.brand.navbar-brand {
 
 .about-container{
   display: grid;
-  grid-template-columns: 75px 30px 1fr 75px;
+  grid-template-columns: 125px 30px 1fr 125px;
   background-color: rgb(34,34,34);
   border: rgb(82, 82, 82) 1px solid;
+  padding-top: 20px;
 }
 .about-content-name-container {
   display: flex;
