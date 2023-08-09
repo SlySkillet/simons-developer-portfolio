@@ -17,7 +17,7 @@ code {
   height: 100vh;
   grid-template-rows: 92px 100px 1fr 50px;
   grid-template-columns: 230px 1fr 1fr 50px;
-  background-color: rgb(28, 32, 27);
+  background-color: rgb(182, 183, 215);
 }
 
 .container{
@@ -27,7 +27,7 @@ code {
 
 /* NAVBAR STYLES */
 nav.bg.navbar.navbar.navbar-expand-lg.navbar-light {
-  background-color: rgb(21, 23, 19);
+  background-color: rgb(162, 164, 212);
   padding: 0px;
   height: 92px;
 }
@@ -46,9 +46,9 @@ nav.bg.navbar.navbar.navbar-expand-lg.navbar-light {
 a.brand.navbar-brand {
   font-size: 50px;
   font-weight: 900;
-  color: white;
+  color: rgb(39, 39, 53);
   text-shadow:  -5px 1px coral;
-  background-color: black;
+  background-color: rgb(92, 97, 150);
   margin-right: 80px;
   padding-left: 50px;
   padding-right: 50px;
@@ -56,18 +56,19 @@ a.brand.navbar-brand {
 }
 
 a.nav-link, p {
-    color: white;
+    color: black;
 }
 
 /* ABOUT STYLES */
 
 .about-content{
-  color: white;
+  color: black;
 }
 
 .about-container{
   display: grid;
   grid-template-columns: 30px 1fr 1fr;
+  border: red 1px solid;
 }
 .about-content-name-container {
   display: flex;
@@ -83,7 +84,7 @@ h1.about-content.name {
 
 h1.about-content.name::first-letter{
   font-size: 70px;
-  color: white;
+  color: black;
   text-shadow:  -5px 1px coral;
 }
 
