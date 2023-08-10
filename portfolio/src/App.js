@@ -10,7 +10,7 @@ function App() {
 <div className="grid-container">
     <BrowserRouter>
       <NavBar />
-      <div className="container">
+      <div className="main-container">
         <Routes>
           <Route path="/" element={ <About /> } />
           <Route path="projects/" element={ <Projects />} />
