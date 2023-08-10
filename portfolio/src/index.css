@@ -16,8 +16,16 @@ code {
   display: grid;
   height: 100vh;
   grid-template-rows: 92px 60px 1fr 50px;
-  grid-template-columns: 100px 1fr 1.5fr .5fr 50px;
-  background-color: rgba(255,127,80,.5);
+  grid-template-columns: 200px 1fr 1fr 0fr 200px;
+  /* background-color: rgba(255,127,80,.5); */
+  background-image: url(https://i.etsystatic.com/13925266/r/il/5c4bcb/1273226807/il_fullxfull.1273226807_pxtx.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  -webkit-transition: opacity 1s linear;
+-o-transition: opacity 1s linear;
+-moz-transition: opacity 1s linear;
+transition: opacity 1s linear;
+
 }
 
 .container{
