@@ -126,7 +126,15 @@ p.sub-text {
 .projects-container{
   background-color: rgb(51,51,51);
   grid-column: 1 / 4;
+}
 
+h2.project-title {
+  color: white;
+  font-weight: 900;
+}
+
+h2.project-title::first-letter{
+  text-shadow:  -5px 1px coral;
 }
 
 /* FOOTER STYLES */

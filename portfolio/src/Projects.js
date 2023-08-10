@@ -3,7 +3,7 @@ import React from 'react'
 function Projects(){
     return(
         <div className="projects-container">
-            <h2 className="project-title">project-timeline</h2>
+            <h2 className="project-title">projects</h2>
         </div>
     )
 }
