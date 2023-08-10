@@ -122,6 +122,13 @@ p.sub-text {
   margin-bottom: 5px;
 }
 
+/* PROJECT COMPONENT STYLES */
+.projects-container{
+  background-color: rgb(51,51,51);
+  grid-column: 1 / 4;
+
+}
+
 /* FOOTER STYLES */
 .footer {
   background-color: rgb(34,34,34);
