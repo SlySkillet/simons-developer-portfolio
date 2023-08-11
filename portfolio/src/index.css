@@ -143,20 +143,26 @@ h2.project-title::first-letter{
   text-shadow:  -5px 1px coral;
 }
 
-.p-container{
+.project-container{
   grid-row: 2;
   background-color: rgb(34,34,34);
-  padding: 5px;
 }
 
-.p-container.left{
+.project-container.left{
   grid-column: 2 / 3;
   margin-right: 5px;
 }
 
-.p-container.right{
+.project-container.right{
   grid-column: 3 / 4;
   margin-left: 5px;
+}
+
+.project-content{
+  margin:25px;
+  padding: 5px;
+  background-color: rgb(51,51,51);
+  border: rgb(82, 82, 82) 1px solid;
 }
 
 /* .projects-timeline{
