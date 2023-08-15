@@ -170,6 +170,13 @@ h2.project-title::first-letter{
 h5.project-description.title {
   font-weight: 600;
 }
+
+.screenshots-container{
+  display: flex;
+  justify-content: center;
+  margin-top:15px;
+  margin-bottom:15px;
+}
 .screenshot{
   margin: 5px;
 }
