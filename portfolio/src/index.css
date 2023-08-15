@@ -178,6 +178,15 @@ h5.project-description.title {
   margin-bottom:15px;
 }
 
+.links-container{
+  display: flex;
+  justify-content: center;
+}
+
+/* .links{
+  justify-self: center;
+} */
+
 .project-link{
   color:aqua;
   font-weight: 600;
@@ -202,7 +211,6 @@ h1.about-content.name{
 }
 
 p.shaded-text{
-  justify-self: center;
   color:rgb(200, 200, 200);
 }
 
