@@ -177,6 +177,13 @@ h5.project-description.title {
   margin-top:15px;
   margin-bottom:15px;
 }
+
+.project-link{
+  color:aqua;
+  font-weight: 600;
+  text-decoration: none;
+}
+
 .screenshot{
   margin: 5px;
 }
@@ -193,6 +200,12 @@ h5.project-description.title {
 h1.about-content.name{
   color: white;
 }
+
+p.shaded-text{
+  justify-self: center;
+  color:rgb(200, 200, 200);
+}
+
 p.about-content.bio,
 h5.about-content.profession,
 p.sub-text,

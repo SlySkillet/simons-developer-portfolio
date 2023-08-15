@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 
 function Projects(){
@@ -13,6 +14,7 @@ function Projects(){
                         <img className="screenshot" src={ require('./images/location-page.png') } alt="location page" width="190"/>
                         <img className="screenshot" src={ require('./images/categories-page.png') } alt="categories page" width="190"/>
                     </div>
+                    <p className="shaded-text"> ~ Visit the deployed app: <Link className="project-link" to="https://luckythirteen.gitlab.io/plunge/">Plunge</Link> ~ </p>
                     <p>I created this peer-to-peer marketplace application from scratch in a team of four cohort-mates at Hack Reactor. We began with the idea to build a platform housing informal classes for local people to share their knowledge, acquire new skills and foster community. This was my first experience taking a full stack application from seed to deployment. Over 6 weeks we wire-framed our vision for the application, built a development environment with docker, created our backend using Fast API and a SQL database, and created a dynamic user interface with React.js. This was a lesson in iterative development and agile methodology. Working in a team like this was a hands on lesson in Git workflow and general project organization. We used Linear to create and assign tickets and linked it up with Git Lab where we filled our merge requests. I am particularly proud of my work in implementing the Google Maps API and Redux toolkit into this project. The map centers on the authenticated user's address provided in their account information and accessed through the Redux store. Learning to work with global state and Google API were my highest priority learning goals in this project and I'm very happy with our product.</p>
                 </div>
             </div>
