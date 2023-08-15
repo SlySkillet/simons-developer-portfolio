@@ -10,9 +10,9 @@ function Projects(){
                 <div className="project-content">
                     <h5 className="project-description title">Plunge</h5>
                     <div className="screenshots-container">
-                        <img className="screenshot" src={ require('./images/main-page.png') } alt="main page" width="190"/>
-                        <img className="screenshot" src={ require('./images/location-page.png') } alt="location page" width="190"/>
-                        <img className="screenshot" src={ require('./images/categories-page.png') } alt="categories page" width="190"/>
+                        <img className="screenshot" src={ require('./images/main-page.png') } alt="main page" width="170"/>
+                        <img className="screenshot" src={ require('./images/location-page.png') } alt="location page" width="170"/>
+                        <img className="screenshot" src={ require('./images/categories-page.png') } alt="categories page" width="170"/>
                     </div>
                     <div className="links-container">
                         <p className="shaded-text links"> ~ Deployed app: <Link className="project-link" to="https://luckythirteen.gitlab.io/plunge/">Plunge</Link> | Repo: <Link className="project-link" to="https://gitlab.com/luckythirteen/plunge">GitLab</Link> ~ </p>
