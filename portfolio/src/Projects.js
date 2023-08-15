@@ -9,7 +9,7 @@ function Projects(){
                 <div className="project-content">
                     <h5 className="project-description title">Plunge</h5>
                     <div className="screeshots-container">
-                        <img className="screenshot" src={ require('./images/mainPage.png') } alt="main page" width="175"/>
+                        <img className="screenshot" src={ require('./images/main-page.png') } alt="main page" width="175"/>
                         <img className="screenshot" src={ require('./images/location-page.png') } alt="location page" width="175"/>
                         <img className="screenshot" src={ require('./images/categories-page.png') } alt="categories page" width="175"/>
                     </div>
