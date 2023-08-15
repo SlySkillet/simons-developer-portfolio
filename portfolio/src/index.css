@@ -18,12 +18,14 @@ code {
   grid-template-columns: 10px 200px 1fr 1fr 0fr 200px 10px;
   grid-template-rows: 92px 60px 1fr 60px 50px;
   background-image: url(https://i.etsystatic.com/13925266/r/il/5c4bcb/1273226807/il_fullxfull.1273226807_pxtx.jpg);
-  background-repeat: no-repeat;
-  background-position: top center;
-  -webkit-transition: opacity 1s linear;
+  background-repeat: none;
+  /* background-size: cover; */
+  background-position: center;
+  background-attachment: fixed;
+  /* -webkit-transition: opacity 1s linear;
 -o-transition: opacity 1s linear;
 -moz-transition: opacity 1s linear;
-transition: opacity 1s linear;
+transition: opacity 1s linear; */
 
 }
 
@@ -165,6 +167,10 @@ h2.project-title::first-letter{
   border: rgb(82, 82, 82) 1px solid;
 }
 
+h5.project-description.title {
+  font-weight: 600;
+}
+
 /* .projects-timeline{
   grid-column: 2 / 3;
   grid-row: 2;
@@ -190,6 +196,7 @@ p.about-content.bio,
 h5.about-content.profession,
 p.sub-text,
 a.nav-link,
+h5.project-description.title,
 p  {
   color: white;
   font-family: 'Inconsolata', monospace;
