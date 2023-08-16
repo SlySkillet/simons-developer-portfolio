@@ -208,6 +208,15 @@ h5.project-description.title {
   margin: 5px;
 }
 
+.tech-stack-container{
+  background-color: rgb(34,34,34);
+  border: rgb(82, 82, 82) 1px solid;
+}
+
+.tech-stack{
+  margin: 0px;
+}
+
 
 /* FOOTER STYLES */
 .footer {
