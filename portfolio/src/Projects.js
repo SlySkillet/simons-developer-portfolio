@@ -1,5 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { SiFastapi
+        , SiReact
+        , SiPython
+        , SiJavascript
+        , SiPostgresql
+        , SiGooglecloud } from 'react-icons/si'
 
 
 function Projects(){
@@ -16,6 +22,14 @@ function Projects(){
                         <img className="screenshot" src={"https://media.licdn.com/dms/image/D562DAQE6ayHFI2SwyQ/profile-treasury-image-shrink_1280_1280/0/1691459202712?e=1692813600&v=beta&t=YlXJ5JtvTSO60xSXbtbwXWDhV7CIHPcQc3qsrp3dpMo"} alt="main page" width="170"/>
                         <img className="screenshot" src={"https://media.licdn.com/dms/image/D562DAQETpzlu-UP0hQ/profile-treasury-image-shrink_1280_1280/0/1691459175346?e=1692813600&v=beta&t=dgdsXG0fabEJE3lnaXlovJUOz3irEQOPR8tX-I0Q6IU"} alt="location page" width="170"/>
                         <img className="screenshot" src={"https://media.licdn.com/dms/image/D562DAQHxXEuRP777dA/profile-treasury-image-shrink_1280_1280/0/1691459254501?e=1692813600&v=beta&t=joazrGkaVEg4Xn_rfcsBWdSWjfQGCJIs4M_aMsN0hCM"} alt="categories page" width="170"/>
+                    </div>
+                    <div className="tech-icons-container">
+                        <SiFastapi className="tech-icon"/>
+                        <SiReact className="tech-icon"/>
+                        <SiPython className="tech-icon"/>
+                        <SiJavascript className="tech-icon" />
+                        <SiPostgresql className="tech-icon" />
+                        <SiGooglecloud className="tech-icon" />
                     </div>
                     <p className="project-description">I created this peer-to-peer marketplace application from scratch in a team of four cohort-mates at Hack Reactor. We began with the idea to build a platform housing informal classes for local people to share their knowledge, acquire new skills and foster community. This was my first experience taking a full stack application from seed to deployment. Over 6 weeks we wire-framed our vision for the application, built a development environment with docker, created our backend using Fast API and a SQL database, and created a dynamic user interface with React.js. This was a lesson in iterative development and agile methodology. Working in a team like this was a hands on lesson in Git workflow and general project organization. We used Linear to create and assign tickets and linked it up with Git Lab where we filled our merge requests. I am particularly proud of my work in implementing the Google Maps API and Redux toolkit into this project. The map centers on the authenticated user's address provided in their account information and accessed through the Redux store. Learning to work with global state and Google API were my highest priority learning goals in this project and I'm very happy with our product.</p>
                     <div className="project-detail-container">

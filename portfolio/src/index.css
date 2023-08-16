@@ -180,6 +180,10 @@ p.project-description {
   margin-right: 5px;
 }
 
+p.project-description {
+  margin-top: 10px;
+}
+
 .project-header{
   display: flex;
   justify-content: space-between;
@@ -192,8 +196,18 @@ h5.project-description.title {
 .screenshots-container{
   display: flex;
   justify-content: center;
-  margin-top:15px;
-  margin-bottom:15px;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+.tech-icons-container{
+  display: flex;
+  justify-content: center;
+}
+
+.tech-icon{
+  color: rgb(200, 200, 200);
+  margin-right: 10px;
 }
 
 .links-container{
