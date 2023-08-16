@@ -174,10 +174,15 @@ h2.project-title::first-letter{
   border: rgb(82, 82, 82) 1px solid;
 }
 
-h5.project-description.title,
+.project-header,
 p.project-description {
   margin-left: 5px;
   margin-right: 5px;
+}
+
+.project-header{
+  display: flex;
+  justify-content: space-between;
 }
 
 h5.project-description.title {

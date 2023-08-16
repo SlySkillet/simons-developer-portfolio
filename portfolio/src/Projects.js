@@ -8,7 +8,10 @@ function Projects(){
             <h2 className="project-title">Projects</h2>
             <div className="project-container left">
                 <div className="project-content">
+                    <div className="project-header">
                     <h5 className="project-description title">Plunge</h5>
+                    <p className="shaded-text">August, 2023</p>
+                    </div>
                     <div className="screenshots-container">
                         <img className="screenshot" src={"https://media.licdn.com/dms/image/D562DAQE6ayHFI2SwyQ/profile-treasury-image-shrink_1280_1280/0/1691459202712?e=1692813600&v=beta&t=YlXJ5JtvTSO60xSXbtbwXWDhV7CIHPcQc3qsrp3dpMo"} alt="main page" width="170"/>
                         <img className="screenshot" src={"https://media.licdn.com/dms/image/D562DAQETpzlu-UP0hQ/profile-treasury-image-shrink_1280_1280/0/1691459175346?e=1692813600&v=beta&t=dgdsXG0fabEJE3lnaXlovJUOz3irEQOPR8tX-I0Q6IU"} alt="location page" width="170"/>
@@ -25,7 +28,10 @@ function Projects(){
             </div>
             <div className="project-container right">
                 <div className="project-content">
+                <div className="project-header">
                     <h5 className="project-description title">RadCar Automobiles</h5>
+                    <p className="shaded-text">June, 2023</p>
+                </div>
                     <div className="screenshots-container">
                         <img className="screenshot" src={"https://media.licdn.com/dms/image/D562DAQG8LH2utQWWhg/profile-treasury-image-shrink_800_800/0/1687635427725?e=1692813600&v=beta&t=Ii06-UAEfXYHOqEcHZznsJZK9WvO0LTVi868X3e4JV4"} alt="main page" width="170"/>
                         <img className="screenshot" src={"https://media.licdn.com/dms/image/D562DAQHvEMs6fkP8pQ/profile-treasury-image-shrink_800_800/0/1687635161251?e=1692813600&v=beta&t=IYM_9ggJT1t78PVXRan9kjcWzh3H5Ny5QPQt9oPCKVw"} alt="location page" width="170"/>
@@ -39,7 +45,10 @@ function Projects(){
                     </div>
                 </div>
                 <div className="project-content">
+                <div className="project-header">
                     <h5 className="project-description title">Task Manager</h5>
+                    <p className="shaded-text">April, 2023</p>
+                </div>
                     <div className="screenshots-container">
                         <img className="screenshot" src={"https://media.licdn.com/dms/image/D562DAQGFa_TGDYSuYQ/profile-treasury-image-shrink_800_800/0/1688572545192?e=1692813600&v=beta&t=fph10NUzrWzPBkeFmHpREXzWVp3XUOIAtdmofQhtXgc"} alt="main page" width="170"/>
                         <img className="screenshot" src={"https://media.licdn.com/dms/image/D562DAQF-7M0Lsy7MPw/profile-treasury-image-shrink_800_800/0/1688572501813?e=1692813600&v=beta&t=_-3Uawt6BMstzxqd2J1k49gduK4nBMr_8zOIKLdqJKo"} alt="location page" width="170"/>
