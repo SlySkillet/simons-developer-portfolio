@@ -135,6 +135,7 @@ p.sub-text {
   display: grid;
   grid-template-rows: 60px 1fr 10px;
   grid-template-columns: 10px 1fr 1fr 10px;
+  margin-top: 100px;
 }
 
 h2.project-title {
@@ -156,12 +157,20 @@ h2.project-title::first-letter{
 
 .project-container.left{
   grid-column: 2 / 3;
-  margin-right: 5px;
+  margin-right: 2.5px;
+}
+
+.spacer-1{
+  height: 200px;
+}
+
+.spacer-2{
+  height: 50px;
 }
 
 .project-container.right{
   grid-column: 3 / 4;
-  margin-left: 5px;
+  margin-left: 2.5px;
 }
 
 .project-content{
@@ -188,10 +197,6 @@ h5.project-description.title {
   display: flex;
   justify-content: center;
 }
-
-/* .links{
-  justify-self: center;
-} */
 
 .project-link{
   color:aqua;
