@@ -42,7 +42,7 @@ transition: opacity 1s linear; */
 }
 
 /* NAVBAR STYLES */
-nav.bg.navbar.navbar.navbar-expand-lg.navbar-light {
+nav.bg.navbar.navbar.navbar-expand.navbar-light {
   background-color: rgb(51,51,51);
   padding: 0px;
   height: 92px;

@@ -7,7 +7,7 @@ import Navbar from 'react-bootstrap/Navbar';
 function NavBar(){
     return(
         <div className="navbar-container">
-            <Navbar expand="lg" className="bg navbar fixed-top">
+            <Navbar className="bg navbar fixed-top">
                 <Container className="navbar-container">
                     <Navbar.Brand className="brand" href="#home">S.C.</Navbar.Brand>
                     <Nav className="me-auto">
