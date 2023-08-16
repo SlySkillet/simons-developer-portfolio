@@ -10,9 +10,9 @@ function Projects(){
                 <div className="project-content">
                     <h5 className="project-description title">Plunge</h5>
                     <div className="screenshots-container">
-                        <img className="screenshot" src={ require('./images/main-page.png') } alt="main page" width="170"/>
-                        <img className="screenshot" src={ require('./images/location-page.png') } alt="location page" width="170"/>
-                        <img className="screenshot" src={ require('./images/categories-page.png') } alt="categories page" width="170"/>
+                        <img className="screenshot" src={"https://media.licdn.com/dms/image/D562DAQE6ayHFI2SwyQ/profile-treasury-image-shrink_1280_1280/0/1691459202712?e=1692813600&v=beta&t=YlXJ5JtvTSO60xSXbtbwXWDhV7CIHPcQc3qsrp3dpMo"} alt="main page" width="170"/>
+                        <img className="screenshot" src={"https://media.licdn.com/dms/image/D562DAQETpzlu-UP0hQ/profile-treasury-image-shrink_1280_1280/0/1691459175346?e=1692813600&v=beta&t=dgdsXG0fabEJE3lnaXlovJUOz3irEQOPR8tX-I0Q6IU"} alt="location page" width="170"/>
+                        <img className="screenshot" src={"https://media.licdn.com/dms/image/D562DAQHxXEuRP777dA/profile-treasury-image-shrink_1280_1280/0/1691459254501?e=1692813600&v=beta&t=joazrGkaVEg4Xn_rfcsBWdSWjfQGCJIs4M_aMsN0hCM"} alt="categories page" width="170"/>
                     </div>
                     <div className="links-container">
                         <p className="shaded-text links"> ~ Deployed app: <Link className="project-link" to="https://luckythirteen.gitlab.io/plunge/">Plunge</Link> | Repo: <Link className="project-link" to="https://gitlab.com/luckythirteen/plunge">GitLab</Link> ~ </p>
