@@ -16,9 +16,12 @@ import Carousel from 'react-bootstrap/Carousel';
 
 function Projects(){
     const [showPlunge, setShowPlunge] = useState(false)
+    const [showRadCar, setShowRadCar] = useState(false)
 
     const handleClosePlunge = () => setShowPlunge(false)
     const handleShowPlunge = () => setShowPlunge(true)
+    const handleCloseRadCar = () => setShowRadCar(false)
+    const handleShowRadCar = () => setShowRadCar(true)
 
     return(
         <div className="projects-container">
@@ -95,9 +98,36 @@ function Projects(){
                     <p className="shaded-text">June, 2023</p>
                 </div>
                     <div className="screenshots-container">
-                        <img className="screenshot" src={"https://media.licdn.com/dms/image/D562DAQG8LH2utQWWhg/profile-treasury-image-shrink_800_800/0/1687635427725?e=1692813600&v=beta&t=Ii06-UAEfXYHOqEcHZznsJZK9WvO0LTVi868X3e4JV4"} alt="main page" width="170"/>
-                        <img className="screenshot" src={"https://media.licdn.com/dms/image/D562DAQHvEMs6fkP8pQ/profile-treasury-image-shrink_800_800/0/1687635161251?e=1692813600&v=beta&t=IYM_9ggJT1t78PVXRan9kjcWzh3H5Ny5QPQt9oPCKVw"} alt="location page" width="170"/>
+                        <Button onClick={handleShowRadCar}>
+                            <img className="screenshot" src={"https://media.licdn.com/dms/image/D562DAQG8LH2utQWWhg/profile-treasury-image-shrink_800_800/0/1687635427725?e=1692813600&v=beta&t=Ii06-UAEfXYHOqEcHZznsJZK9WvO0LTVi868X3e4JV4"} alt="main page" width="170"/>
+                        </Button>
+                        <Button onClick={handleShowRadCar}>
+                            <img className="screenshot" src={"https://media.licdn.com/dms/image/D562DAQHvEMs6fkP8pQ/profile-treasury-image-shrink_800_800/0/1687635161251?e=1692813600&v=beta&t=IYM_9ggJT1t78PVXRan9kjcWzh3H5Ny5QPQt9oPCKVw"} alt="location page" width="170"/>
+                        </Button>
                     </div>
+                    <Modal show={showRadCar} onHide={handleCloseRadCar}>
+                            <Modal.Header closeButton>
+                            <Modal.Title>Plunge</Modal.Title>
+                            </Modal.Header>
+                            <Modal.Body >
+                            <Carousel data-bs-theme="dark" indicators={false}>
+                                <Carousel.Item>
+                                    <img
+                                    className="d-block w-100 radcar-modal-img"
+                                    src="https://media.licdn.com/dms/image/D562DAQG8LH2utQWWhg/profile-treasury-image-shrink_800_800/0/1687635427725?e=1692813600&v=beta&t=Ii06-UAEfXYHOqEcHZznsJZK9WvO0LTVi868X3e4JV4"
+                                    alt="First slide"
+                                    />
+                                </Carousel.Item>
+                                <Carousel.Item>
+                                    <img
+                                    className="d-block w-100"
+                                    src="https://media.licdn.com/dms/image/D562DAQHvEMs6fkP8pQ/profile-treasury-image-shrink_800_800/0/1687635161251?e=1692813600&v=beta&t=IYM_9ggJT1t78PVXRan9kjcWzh3H5Ny5QPQt9oPCKVw"
+                                    alt="Second slide"
+                                    />
+                                </Carousel.Item>
+                                </Carousel>
+                            </Modal.Body>
+                    </Modal>
                     <div className="tech-icons-container">
                         <SiReact className="tech-icon" />
                         <TbBrandDjango className="tech-icon" />
