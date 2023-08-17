@@ -15,10 +15,10 @@ import Carousel from 'react-bootstrap/Carousel';
 
 
 function Projects(){
-    const [show, setShow] = useState(false)
+    const [showPlunge, setShowPlunge] = useState(false)
 
-    const handleClose = () => setShow(false)
-    const handleShow = () => setShow(true)
+    const handleClosePlunge = () => setShowPlunge(false)
+    const handleShowPlunge = () => setShowPlunge(true)
 
     return(
         <div className="projects-container">
@@ -30,17 +30,17 @@ function Projects(){
                     <p className="shaded-text">August, 2023</p>
                     </div>
                     <div className="screenshots-container">
-                        <Button onClick={handleShow}>
+                        <Button onClick={handleShowPlunge}>
                             <img className="screenshot" src={"https://media.licdn.com/dms/image/D562DAQE6ayHFI2SwyQ/profile-treasury-image-shrink_1280_1280/0/1691459202712?e=1692813600&v=beta&t=YlXJ5JtvTSO60xSXbtbwXWDhV7CIHPcQc3qsrp3dpMo"} alt="main page" width="170"/>
                         </Button>
-                        <Button onClick={handleShow}>
+                        <Button onClick={handleShowPlunge}>
                             <img className="screenshot" src={"https://media.licdn.com/dms/image/D562DAQETpzlu-UP0hQ/profile-treasury-image-shrink_1280_1280/0/1691459175346?e=1692813600&v=beta&t=dgdsXG0fabEJE3lnaXlovJUOz3irEQOPR8tX-I0Q6IU"} alt="location page" width="170"/>
                         </Button>
-                        <Button onClick={handleShow}>
+                        <Button onClick={handleShowPlunge}>
                             <img className="screenshot" src={"https://media.licdn.com/dms/image/D562DAQHxXEuRP777dA/profile-treasury-image-shrink_1280_1280/0/1691459254501?e=1692813600&v=beta&t=joazrGkaVEg4Xn_rfcsBWdSWjfQGCJIs4M_aMsN0hCM"} alt="categories page" width="170"/>
                         </Button>
                     </div>
-                    <Modal show={show} onHide={handleClose}>
+                    <Modal show={showPlunge} onHide={handleClosePlunge}>
                             <Modal.Header closeButton>
                             <Modal.Title>Plunge</Modal.Title>
                             </Modal.Header>
