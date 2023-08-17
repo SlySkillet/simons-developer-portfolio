@@ -279,3 +279,7 @@ p  {
   color: white;
   font-family: 'Inconsolata', monospace;
 }
+
+.modal-title.h4 {
+  font-family: 'Inconsolata', monospace;
+}

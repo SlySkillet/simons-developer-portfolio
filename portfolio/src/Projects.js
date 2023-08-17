@@ -11,6 +11,7 @@ import { SiFastapi
 import { TbBrandDjango } from "react-icons/tb";
 import Button from 'react-bootstrap/Button'
 import Modal from 'react-bootstrap/Modal'
+import Carousel from 'react-bootstrap/Carousel';
 
 
 function Projects(){
@@ -44,9 +45,30 @@ function Projects(){
                             <Modal.Title>Plunge</Modal.Title>
                             </Modal.Header>
                             <Modal.Body>
-                                Woohoo, you are reading this text in a modal!
+                            <Carousel data-bs-theme="dark" indicators={false}>
+                                <Carousel.Item>
+                                    <img
+                                    className="d-block w-100"
+                                    src="https://media.licdn.com/dms/image/D562DAQE6ayHFI2SwyQ/profile-treasury-image-shrink_1280_1280/0/1691459202712?e=1692813600&v=beta&t=YlXJ5JtvTSO60xSXbtbwXWDhV7CIHPcQc3qsrp3dpMo"
+                                    alt="First slide"
+                                    />
+                                </Carousel.Item>
+                                <Carousel.Item>
+                                    <img
+                                    className="d-block w-100"
+                                    src="https://media.licdn.com/dms/image/D562DAQETpzlu-UP0hQ/profile-treasury-image-shrink_1280_1280/0/1691459175346?e=1692813600&v=beta&t=dgdsXG0fabEJE3lnaXlovJUOz3irEQOPR8tX-I0Q6IU"
+                                    alt="Second slide"
+                                    />
+                                </Carousel.Item>
+                                <Carousel.Item>
+                                    <img
+                                    className="d-block w-100"
+                                    src="https://media.licdn.com/dms/image/D562DAQHxXEuRP777dA/profile-treasury-image-shrink_1280_1280/0/1691459254501?e=1692813600&v=beta&t=joazrGkaVEg4Xn_rfcsBWdSWjfQGCJIs4M_aMsN0hCM"
+                                    alt="Third slide"
+                                    />
+                                </Carousel.Item>
+                                </Carousel>
                             </Modal.Body>
-                            <Modal.Footer></Modal.Footer>
                     </Modal>
                     <div className="tech-icons-container">
                         <SiFastapi className="tech-icon"/>
