@@ -46,7 +46,7 @@ function Projects(){
                             <img className="screenshot" src={"https://media.licdn.com/dms/image/D562DAQHxXEuRP777dA/profile-treasury-image-shrink_1280_1280/0/1691459254501?e=1692813600&v=beta&t=joazrGkaVEg4Xn_rfcsBWdSWjfQGCJIs4M_aMsN0hCM"} alt="categories page" width="170"/>
                         </Button>
                     </div>
-                    <Modal show={showPlunge} onHide={handleClosePlunge}>
+                    <Modal show={showPlunge} onHide={handleClosePlunge} size="xl">
                             <Modal.Header closeButton>
                             <Modal.Title>Plunge</Modal.Title>
                             </Modal.Header>
@@ -108,7 +108,7 @@ function Projects(){
                             <img className="screenshot" src={"https://media.licdn.com/dms/image/D562DAQHvEMs6fkP8pQ/profile-treasury-image-shrink_800_800/0/1687635161251?e=1692813600&v=beta&t=IYM_9ggJT1t78PVXRan9kjcWzh3H5Ny5QPQt9oPCKVw"} alt="location page" width="170"/>
                         </Button>
                     </div>
-                    <Modal show={showRadCar} onHide={handleCloseRadCar}>
+                    <Modal show={showRadCar} onHide={handleCloseRadCar} size="xl">
                             <Modal.Header closeButton>
                             <Modal.Title>RadCar Automobiles</Modal.Title>
                             </Modal.Header>
@@ -159,7 +159,7 @@ function Projects(){
                             <img className="screenshot" src={"https://media.licdn.com/dms/image/D562DAQF-7M0Lsy7MPw/profile-treasury-image-shrink_800_800/0/1688572501813?e=1692813600&v=beta&t=_-3Uawt6BMstzxqd2J1k49gduK4nBMr_8zOIKLdqJKo"} alt="location page" width="170"/>
                         </Button>
                     </div>
-                    <Modal show={showTaskManager} onHide={handleCloseTaskManager}>
+                    <Modal show={showTaskManager} onHide={handleCloseTaskManager} size="xl">
                             <Modal.Header closeButton>
                             <Modal.Title>Task Manager</Modal.Title>
                             </Modal.Header>
