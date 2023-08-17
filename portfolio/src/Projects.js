@@ -17,11 +17,14 @@ import Carousel from 'react-bootstrap/Carousel';
 function Projects(){
     const [showPlunge, setShowPlunge] = useState(false)
     const [showRadCar, setShowRadCar] = useState(false)
+    const [showTaskManager, setShowTaskManager] = useState(false)
 
     const handleClosePlunge = () => setShowPlunge(false)
     const handleShowPlunge = () => setShowPlunge(true)
     const handleCloseRadCar = () => setShowRadCar(false)
     const handleShowRadCar = () => setShowRadCar(true)
+    const handleCloseTaskManager = () => setShowTaskManager(false)
+    const handleShowTaskManager = () => setShowTaskManager(true)
 
     return(
         <div className="projects-container">
@@ -107,7 +110,7 @@ function Projects(){
                     </div>
                     <Modal show={showRadCar} onHide={handleCloseRadCar}>
                             <Modal.Header closeButton>
-                            <Modal.Title>Plunge</Modal.Title>
+                            <Modal.Title>RadCar Automobiles</Modal.Title>
                             </Modal.Header>
                             <Modal.Body >
                             <Carousel data-bs-theme="dark" indicators={false}>
@@ -149,9 +152,36 @@ function Projects(){
                     <p className="shaded-text">April, 2023</p>
                 </div>
                     <div className="screenshots-container">
-                        <img className="screenshot" src={"https://media.licdn.com/dms/image/D562DAQGFa_TGDYSuYQ/profile-treasury-image-shrink_800_800/0/1688572545192?e=1692813600&v=beta&t=fph10NUzrWzPBkeFmHpREXzWVp3XUOIAtdmofQhtXgc"} alt="main page" width="170"/>
-                        <img className="screenshot" src={"https://media.licdn.com/dms/image/D562DAQF-7M0Lsy7MPw/profile-treasury-image-shrink_800_800/0/1688572501813?e=1692813600&v=beta&t=_-3Uawt6BMstzxqd2J1k49gduK4nBMr_8zOIKLdqJKo"} alt="location page" width="170"/>
+                        <Button onClick={handleShowTaskManager}>
+                            <img className="screenshot" src={"https://media.licdn.com/dms/image/D562DAQGFa_TGDYSuYQ/profile-treasury-image-shrink_800_800/0/1688572545192?e=1692813600&v=beta&t=fph10NUzrWzPBkeFmHpREXzWVp3XUOIAtdmofQhtXgc"} alt="main page" width="170"/>
+                        </Button>
+                        <Button onClick={handleShowTaskManager}>
+                            <img className="screenshot" src={"https://media.licdn.com/dms/image/D562DAQF-7M0Lsy7MPw/profile-treasury-image-shrink_800_800/0/1688572501813?e=1692813600&v=beta&t=_-3Uawt6BMstzxqd2J1k49gduK4nBMr_8zOIKLdqJKo"} alt="location page" width="170"/>
+                        </Button>
                     </div>
+                    <Modal show={showTaskManager} onHide={handleCloseTaskManager}>
+                            <Modal.Header closeButton>
+                            <Modal.Title>Task Manager</Modal.Title>
+                            </Modal.Header>
+                            <Modal.Body >
+                            <Carousel data-bs-theme="dark" indicators={false}>
+                                <Carousel.Item>
+                                    <img
+                                    className="d-block w-100"
+                                    src="https://media.licdn.com/dms/image/D562DAQGFa_TGDYSuYQ/profile-treasury-image-shrink_800_800/0/1688572545192?e=1692813600&v=beta&t=fph10NUzrWzPBkeFmHpREXzWVp3XUOIAtdmofQhtXgc"
+                                    alt="First slide"
+                                    />
+                                </Carousel.Item>
+                                <Carousel.Item>
+                                    <img
+                                    className="d-block w-100"
+                                    src="https://media.licdn.com/dms/image/D562DAQF-7M0Lsy7MPw/profile-treasury-image-shrink_800_800/0/1688572501813?e=1692813600&v=beta&t=_-3Uawt6BMstzxqd2J1k49gduK4nBMr_8zOIKLdqJKo"
+                                    alt="Second slide"
+                                    />
+                                </Carousel.Item>
+                                </Carousel>
+                            </Modal.Body>
+                    </Modal>
                     <div className="tech-icons-container">
                         <TbBrandDjango className="tech-icon" />
                         <SiPython className="tech-icon" />
