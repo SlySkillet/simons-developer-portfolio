@@ -14,18 +14,14 @@ code {
 
 .grid-container{
   display: grid;
-  height: 100vh;
   grid-template-columns: 0px 200px 1fr 1fr 0fr 200px 0px;
   grid-template-rows: 92px 60px 1fr 60px 50px;
   background-image: url(https://i.etsystatic.com/13925266/r/il/5c4bcb/1273226807/il_fullxfull.1273226807_pxtx.jpg);
-  background-repeat: none;
+
+  /* background-repeat: none; */
   /* background-size: cover; */
-  background-position: center;
-  background-attachment: fixed;
-  /* -webkit-transition: opacity 1s linear;
--o-transition: opacity 1s linear;
--moz-transition: opacity 1s linear;
-transition: opacity 1s linear; */
+  /* background-position: center; */
+  /* background-attachment: fixed; */
 
 }
 
@@ -135,7 +131,11 @@ p.sub-text {
   display: grid;
   grid-template-rows: 60px 1fr 10px;
   grid-template-columns: 10px 1fr 1fr 10px;
-  margin-top: 100px;
+  /* margin-top: 100px; */
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 100px;
+
 }
 
 h2.project-title {
