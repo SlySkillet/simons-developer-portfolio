@@ -86,6 +86,7 @@ nav.bg.navbar.fixed-top.navbar.navbar-expand-lg.navbar-light {
   background-color: rgb(34,34,34);
   border: rgb(82, 82, 82) 1px solid;
   padding-top: 0px;
+  height:fit-content;
 }
 .about-content-name-container {
   display: flex;
