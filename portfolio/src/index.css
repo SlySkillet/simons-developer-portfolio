@@ -110,16 +110,14 @@ h1.about-content.name::first-letter{
   text-shadow:  -5px 1px coral;
 }
 
-h5.about-content.profession {
+.about-content-sub-container{
   grid-column: 3 / 4;
   margin-bottom: 2px;
 }
 
-img {
-  grid-row: 1 / 5;
-  grid-column: 4/5;
-  align-self: center;
-  margin:10px;
+h5.about-content.profession,
+p.sub-text {
+  margin: 0px;
 }
 
 p.about-content.bio {
@@ -133,15 +131,24 @@ p.about-content.bio {
   grid-column: 2 / 4;
 }
 
+img {
+  grid-row: 1 / 5;
+  grid-column: 4/5;
+  align-self: center;
+  justify-self: center;
+  margin:10px;
+  height: 250px;
+}
+
 content.bio.two {
   grid-column: 2 / 5;
 }
 
-p.sub-text {
+/* p.sub-text {
   grid-column: 3 / 5;
   grid-row: 3;
   margin-bottom: 5px;
-}
+} */
 
 /* PROJECT COMPONENT STYLES */
 .projects-container{
