@@ -87,6 +87,9 @@ nav.bg.navbar.fixed-top.navbar.navbar-expand-lg.navbar-light {
   border: rgb(82, 82, 82) 1px solid;
   padding-top: 0px;
   height:fit-content;
+  align-self: center;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 .about-content-name-container {
   display: flex;
