@@ -90,7 +90,7 @@ function Projects(){
                         <p className="project-detail">Deployed app: <Link className="project-link" to="https://luckythirteen.gitlab.io/plunge/">Plunge</Link> | Repo: <Link className="project-link" to="https://gitlab.com/luckythirteen/plunge">GitLab</Link></p>
                     </div>
                     <div className="project-detail-container">
-                        <p className="project-detail">React | FastAPI | Python | Javascript | SQL | Google Cloud Platform</p>
+                        <p className="project-detail">React | FastAPI | Python | Javascript | SQL | GoogleMaps</p>
                     </div>
                 </div>
             </div>

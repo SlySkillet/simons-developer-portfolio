@@ -8,7 +8,7 @@ function About(){
                 <h1 className="about-content name">Conrad</h1>
             </div>
             <div className="about-content-sub-container">
-                <h5 className="about-content profession">Full Stack Developer | Web Designer</h5>
+                <h5 className="about-content profession">Software Engineer</h5>
                 <p className="sub-text">Python | Javascript | React | Django | FastAPI | SQL | Docker</p>
             </div>
             <img className="portrait" alt="simon" src={require('./images/simon-cartoon.JPEG')}/>

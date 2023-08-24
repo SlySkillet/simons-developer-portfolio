@@ -73,6 +73,13 @@ nav.bg.navbar.fixed-top.navbar.navbar-expand-lg.navbar-light {
   border-bottom: rgb(82, 82, 82) 1px solid;
 }
 
+a.nav-link{
+  font-weight: 600;
+}
+a.nav-link:hover {
+  color: aqua;
+}
+
 /* ABOUT STYLES */
 
 .about-content{
@@ -90,6 +97,7 @@ nav.bg.navbar.fixed-top.navbar.navbar-expand-lg.navbar-light {
   align-self: center;
   margin-left: 50px;
   margin-right: 50px;
+  min-width: 850px;
 }
 .about-content-name-container {
   display: flex;
@@ -305,13 +313,16 @@ h1.about-content.name{
   color: white;
 }
 
-p.shaded-text{
+p.shaded-text,
+p.sub-text
+{
   color:rgb(200, 200, 200);
+  font-family: 'Inconsolata', monospace;
 }
 
 p.about-content.bio,
 h5.about-content.profession,
-p.sub-text,
+/* p.sub-text, */
 a.nav-link,
 h5.project-description.title,
 p  {
