@@ -4,6 +4,7 @@ import NavBar from './Nav'
 import About from './About'
 import Footer from './Footer'
 import Projects from './Projects';
+import Resume from './Resume';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={ <About /> } />
           <Route path="projects/" element={ <Projects />} />
+          <Route path="resume/" element={ <Resume />} />
         </Routes>
       </div>
       {/* <Footer /> */}
