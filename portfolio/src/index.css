@@ -141,12 +141,12 @@ p.about-content.bio {
 }
 
 img.portrait {
-  grid-row: 1 / 5;
+  grid-row: 1 / 7;
   grid-column: 4/5;
   align-self: center;
-  justify-self: center;
-  margin:10px;
-  height: 250px;
+  justify-self: right;
+  /* margin:10px; */
+  height: 375px;
 }
 
 content.bio.two {
