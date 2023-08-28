@@ -303,11 +303,19 @@ button.btn.btn-primary {
 
 /* RESUME STYLES */
 .resume-container {
-  background-color: rgb(34,34,34);
   grid-row: 2 / 3;
   grid-column: 2 / 4;
+  display: grid;
+  background-color: rgb(34,34,34);
+  grid-template-columns: 1fr 900px 1fr;
 }
 
+img.resume-img {
+  width: 900px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  grid-column: 2 / 3;
+}
 
 /* FOOTER STYLES */
 .footer {
@@ -315,6 +323,7 @@ button.btn.btn-primary {
   grid-row: 5 / 7;
   grid-column: 1 / 8;
 }
+
 
 /* FONT */
 h1.about-content.name{
