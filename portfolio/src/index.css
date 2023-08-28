@@ -18,17 +18,10 @@ code {
   grid-template-columns: 0px 200px 1fr 1fr 0fr 200px 0px;
   grid-template-rows: 92px 60px 1fr 1fr 60px;
   background-image: url(https://i.etsystatic.com/13925266/r/il/5c4bcb/1273226807/il_fullxfull.1273226807_pxtx.jpg);
-
-  /* background-repeat: none; */
-  /* background-size: cover; */
-  /* background-position: center; */
-  /* background-attachment: fixed; */
-
 }
 
 .container{
   grid-column: 2 / 4;
-  /* grid-row: 3 / 5; */
 }
 
 .main-container{
@@ -293,14 +286,6 @@ button.btn.btn-primary {
   color: rgb(200, 200, 200)
 }
 
-/* .spacer-1{
-  height: 200px;
-}
-
-.spacer-2{
-  height: 50px;
-} */
-
 /* RESUME STYLES */
 .resume-container {
   grid-row: 2 / 3;
@@ -344,7 +329,6 @@ p.sub-text
 
 p.about-content.bio,
 h5.about-content.profession,
-/* p.sub-text, */
 a.nav-link,
 h5.project-description.title,
 p  {
