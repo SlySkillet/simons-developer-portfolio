@@ -1,11 +1,12 @@
 import React from 'react'
+// import { Document } from 'react-pdf'
 
 function Resume (){
     return (
         <div className="projects-container">
             <h2 className="project-title">Resume</h2>
-            <div className="project-container">
-                <p>resume</p>
+            <div className="resume-container">
+                <p> resume </p>
             </div>
         </div>
     )
