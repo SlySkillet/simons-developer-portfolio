@@ -308,16 +308,17 @@ button.btn.btn-primary {
   display: grid;
   height: fit-content;
   background-color: rgb(34,34,34);
-  grid-template-columns: .1fr 1.8fr .1fr;
+  padding:20px;
+  grid-template-columns: 1fr;
 }
 
 iframe.resume-img {
   /* width: 900px; */
   height: 100vh;
   width:100%;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  grid-column: 2 / 3;
+  /* margin-top: 50px;
+  margin-bottom: 50px; */
+  grid-column: 1 / 2;
   justify-self: center;
 }
 
