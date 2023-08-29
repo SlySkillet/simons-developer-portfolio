@@ -308,14 +308,24 @@ iframe.resume-img {
 }
 
 /* CONTACT STYLES */
+.project-content.contact-container {
+  display: grid;
+  grid-column: 1 / 4;
+  justify-self: center;
+  width: 500px;
+  padding-top: 30px;
+}
+
 .contact-links-container {
   justify-self: center;
+  margin-top: 10px;
 }
 
 .contact-subtitle {
   justify-self: center;
   color: white;
   font-family: 'Inconsolata', monospace;
+  margin-top: 20px;
 }
 
 button.btn.btn-outline-info {
@@ -333,6 +343,21 @@ button.btn.btn-outline-info:hover {
   background-color: aqua;
 }
 
+.contact-email {
+  justify-self: center;
+  color: aqua;
+  font-family:'Inconsolata', monospace;
+  font-size: 20px;;
+}
+
+.project-detail-container.contact {
+  margin-top: 50px;
+}
+
+p.contact-detail {
+  text-align: center;
+  margin: 5px;
+}
 /* FOOTER STYLES */
 .footer {
   background-color: rgb(34,34,34);
