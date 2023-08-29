@@ -308,9 +308,30 @@ iframe.resume-img {
 }
 
 /* CONTACT STYLES */
-/* h2.project-title {
-  margin-left: 0;
-} */
+.contact-links-container {
+  justify-self: center;
+}
+
+.contact-subtitle {
+  justify-self: center;
+  color: white;
+  font-family: 'Inconsolata', monospace;
+}
+
+button.btn.btn-outline-info {
+  font-weight: 600;
+  margin-left:15px;
+  margin-right:15px;
+  padding-left:30px;
+  padding-right: 30px;
+  color: aqua;
+  border: aqua 2px solid;
+}
+
+button.btn.btn-outline-info:hover {
+  color: black;
+  background-color: aqua;
+}
 
 /* FOOTER STYLES */
 .footer {
@@ -336,11 +357,12 @@ p.about-content.bio,
 h5.about-content.profession,
 a.nav-link,
 h5.project-description.title,
-p  {
+p {
   color: white;
   font-family: 'Inconsolata', monospace;
 }
 
-.modal-title.h4 {
+.modal-title.h4,
+button.btn.btn-outline-info {
   font-family: 'Inconsolata', monospace;
 }
