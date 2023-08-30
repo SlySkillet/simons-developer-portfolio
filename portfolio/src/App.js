@@ -10,7 +10,7 @@ import Contact from './Contact'
 function App() {
   return (
 <div className="grid-container">
-    <HashRouter basename='/simons-developer-portfolio'>
+    <HashRouter>
       <NavBar />
       <div className="main-container">
         <Routes>
