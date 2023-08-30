@@ -11,11 +11,11 @@ function NavBar(){
                 <Container className="navbar-container">
                     <Navbar.Brand className="brand" href="#home">S.C.</Navbar.Brand>
                     <Nav className="me-auto">
-                        <Nav.Link href="simons-developer-portfolio/">About</Nav.Link>
-                        <Nav.Link href="simons-developer-portfolio/#/projects">Projects</Nav.Link>
-                        <Nav.Link href="simons-developer-portfolio/#/resume">Resume</Nav.Link>
+                        <Nav.Link href="#/">About</Nav.Link>
+                        <Nav.Link href="#/projects">Projects</Nav.Link>
+                        <Nav.Link href="#/resume">Resume</Nav.Link>
                         {/* <Nav.Link href="#blog">Blog</Nav.Link> */}
-                        <Nav.Link href="/contact">Contact</Nav.Link>
+                        <Nav.Link href="#/contact">Contact</Nav.Link>
                     </Nav>
                 </Container>
             </Navbar>
