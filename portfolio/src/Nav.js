@@ -15,7 +15,7 @@ function NavBar(){
                         <Nav.Link href="simons-developer-portfolio/#/projects">Projects</Nav.Link>
                         <Nav.Link href="simons-developer-portfolio/#/resume">Resume</Nav.Link>
                         {/* <Nav.Link href="#blog">Blog</Nav.Link> */}
-                        <Nav.Link href="/#/contact">Contact</Nav.Link>
+                        <Nav.Link to="#/contact">Contact</Nav.Link>
                     </Nav>
                 </Container>
             </Navbar>
