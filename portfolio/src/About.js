@@ -12,8 +12,8 @@ function About(){
                 <p className="sub-text">Python | Javascript | React | Django | FastAPI | SQL | Docker</p>
             </div>
             <img className="portrait" alt="simon" src={require('./images/portrait.JPEG')}/>
-            <p className="about-content bio">I am a hands-on, creative developer with a background in art and fine dining. My interest in software began as a desire to create, solving puzzles along the way. Code brings together mathematical logic and artful design with endless and ever-evolving possibilities.</p>
-            <p className="about-content bio two">Away from the computer, somewhere in the world, you’ll find me doing any combination of running, diving in deep water, snowboarding or making a new place home. </p>
+            <p className="about-content bio">I am a creative developer with a background in art and fine dining. My interest in software began as a desire to create and solve complex puzzles in the process. I find that code combines mathematical logic with imaginitive design. I'm excited to keep creating and exploring new possibilities in the tech industry.</p>
+            <p className="about-content bio two">Away from the computer, you’ll find me running, diving in deep water, snowboarding or whipping up a good meal.</p>
             <p className="sub-text">Hack Reactor Graduate - 2023 | BA Earlham College - 2014</p>
 
         </div>
