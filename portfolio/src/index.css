@@ -74,6 +74,11 @@ a.nav-link:hover {
   color: aqua;
 }
 
+a.navbar-link.nav-link.active {
+  color: rgb(200, 200, 200);
+  /* font-weight: 900; */
+}
+
 /* ABOUT STYLES */
 
 .about-content{
