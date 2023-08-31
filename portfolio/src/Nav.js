@@ -9,7 +9,7 @@ function NavBar(){
         <div className="navbar-container">
             <Navbar className="bg navbar fixed-top">
                 <Container className="navbar-container">
-                    <Navbar.Brand className="brand" href="#home">S.C.</Navbar.Brand>
+                    <Navbar.Brand className="brand" href="#/">S.C.</Navbar.Brand>
                     <Nav className="me-auto">
                         <Nav.Link className="navbar-link" href="#/">About</Nav.Link>
                         <Nav.Link className="navbar-link" href="#/projects">Projects</Nav.Link>

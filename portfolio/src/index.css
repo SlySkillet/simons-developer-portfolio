@@ -55,7 +55,11 @@ a.brand.navbar-brand {
   font-size: 50px;
   font-weight: 900;
   color: white;
-  text-shadow:  -5px 1px coral;
+  text-shadow:  -3px 1px coral,
+    -1px 0 rgb(82, 82, 82),
+    0 1px rgb(82, 82, 82),
+    1px 0 rgb(82, 82, 82),
+    0 -1px rgb(82, 82, 82);
   background-color: rgb(34,34,34);
   margin-right: 80px;
   padding-left: 50px;
@@ -188,7 +192,7 @@ h2.project-title {
 }
 
 h2.project-title::first-letter{
-  text-shadow:  -5px 1px coral;
+  text-shadow:  -3px 1px coral;
 }
 
 .project-container{
