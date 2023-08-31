@@ -86,13 +86,13 @@ a.nav-link:hover {
   grid-template-columns: 15px 30px 1fr 220px 10px;
   background-color: rgb(34,34,34);
   border: rgb(82, 82, 82) 1px solid;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   height:fit-content;
   align-self: center;
   margin-left: 50px;
   margin-right: 50px;
-  min-width: 850px;
+  width: 900px;
   box-shadow: 1px 1px 20px 8px rgb(88,71,33)
 }
 .about-content-name-container {
@@ -148,7 +148,7 @@ img.portrait {
   align-self: center;
   justify-self: right;
   /* margin:10px; */
-  height: 375px;
+  height: 385px;
 }
 
 content.bio.two {
