@@ -86,7 +86,8 @@ a.nav-link:hover {
   grid-template-columns: 15px 30px 1fr 220px 10px;
   background-color: rgb(34,34,34);
   border: rgb(82, 82, 82) 1px solid;
-  padding-top: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   height:fit-content;
   align-self: center;
   margin-left: 50px;
