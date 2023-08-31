@@ -330,6 +330,7 @@ iframe.resume-img {
 .contact-links-container {
   justify-self: center;
   margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .contact-subtitle {
@@ -337,6 +338,7 @@ iframe.resume-img {
   color: white;
   font-family: 'Inconsolata', monospace;
   margin-top: 20px;
+  margin-bottom:20px;
 }
 
 button.btn.btn-outline-info {

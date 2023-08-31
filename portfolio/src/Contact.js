@@ -19,7 +19,7 @@ function Contact(){
                         <Link to="https://github.com/SlySkillet"><Button variant="outline-info">GitHub < FaGithubAlt /></Button></Link>
                     </div>
                     <h3 className="contact-subtitle">Email:</h3>
-                    <Link className="contact-email" to="">simondbconrad@gmail.com</Link>
+                    <p className="contact-email" to="">simondbconrad@gmail.com</p>
                     <h3 className="contact-subtitle">Discord:</h3>
                     <p className="contact-email">SlySkillet#1031</p>
                     <div className="project-detail-container contact">
