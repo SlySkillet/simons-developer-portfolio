@@ -29,8 +29,6 @@ function Projects(){
     const handleCloseTaskManager = () => setShowTaskManager(false)
     const handleShowTaskManager = () => setShowTaskManager(true)
 
-    // const windowWidth = useRef([window.innerWidth])
-    // console.log(windowWidth)
     useEffect(() => {
         const handleWindowResize = () => {
             setWindowWidth([window.innerWidth])
@@ -40,7 +38,8 @@ function Projects(){
             window.removeEventListener('resize', handleWindowResize)
         }
     }, [])
-    console.log("width", windowWidth)
+
+    const numberColumns = windowWidth > 1360 ? 2 : 1
 
     return(
         <div className="projects-container">

@@ -222,7 +222,7 @@ h2.project-title::first-letter{
   background-color: rgb(51,51,51);
   border: rgb(82, 82, 82) 1px solid;
   max-width: 600px;
-  min-width: 400px;
+  min-width: 500px;
   height:fit-content;
 }
 
