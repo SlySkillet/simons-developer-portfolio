@@ -1,4 +1,4 @@
-import { React, useState } from 'react'
+import { React, useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { SiFastapi
         , SiReact
@@ -18,6 +18,9 @@ function Projects(){
     const [showPlunge, setShowPlunge] = useState(false)
     const [showRadCar, setShowRadCar] = useState(false)
     const [showTaskManager, setShowTaskManager] = useState(false)
+    const [windowWidth, setWindowWidth] = useState([
+        window.innerWidth
+    ])
 
     const handleClosePlunge = () => setShowPlunge(false)
     const handleShowPlunge = () => setShowPlunge(true)
@@ -25,6 +28,19 @@ function Projects(){
     const handleShowRadCar = () => setShowRadCar(true)
     const handleCloseTaskManager = () => setShowTaskManager(false)
     const handleShowTaskManager = () => setShowTaskManager(true)
+
+    // const windowWidth = useRef([window.innerWidth])
+    // console.log(windowWidth)
+    useEffect(() => {
+        const handleWindowResize = () => {
+            setWindowWidth([window.innerWidth])
+        }
+        window.addEventListener('resize', handleWindowResize)
+        return () => {
+            window.removeEventListener('resize', handleWindowResize)
+        }
+    }, [])
+    console.log("width", windowWidth)
 
     return(
         <div className="projects-container">
