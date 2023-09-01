@@ -40,6 +40,7 @@ function Projects(){
     }, [])
 
     const numberColumns = windowWidth > 1360 ? 2 : 1
+    console.log(windowWidth)
 
     if (numberColumns === 2){
         return(
@@ -219,7 +220,7 @@ function Projects(){
         return (
             <div className="projects-container">
                 <h2 className="project-title">Projects</h2>
-                <div className="project-container left">
+                <div className="project-container center">
                     <div className="project-content">
                         <div className="project-header">
                         <h5 className="project-description title">Plunge</h5>

@@ -181,7 +181,7 @@ p.sub-text {
   /* margin-top: 100px; */
   margin-left: 10px;
   margin-right: 10px;
-
+  min-width: 760px;
 }
 
 h2.project-title {
@@ -212,6 +212,13 @@ h2.project-title::first-letter{
 .project-container.right{
   grid-column: 3 / 4;
   margin-left: 2.5px;
+}
+
+.project-container.center{
+  grid-column: 2 / 4;
+  margin-right: 2.5px;
+  margin-left: 2.5px;
+  justify-content: center;
 }
 
 .project-content{
