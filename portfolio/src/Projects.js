@@ -121,9 +121,9 @@ function Projects(){
                             <SiReact className="tech-icon" />
                             <SiJavascript className="tech-icon" />
                         </div>
-                        <p className="project-description">This portfolio housing my projects is a project in itself. I built this from scratch using React and deployed it with github pages. I am not providing any screenshots for this one, anyone reading this is already looking at the live site. This is a work in progress, one I will refactor and expand going forward. I'm excited to share more repos and deployed applications as I build more. Anyone curious can view my code at the repo link below. </p>
+                        <p className="project-description">This portfolio housing my projects is a project in itself. I built this from scratch using React and deployed it with github pages. I am not providing any screenshots for this one, anyone reading this is already looking at the live site. This is a work in progress, one I will refactor and expand going forward. I am still working on image hosting for this site and I apologize if screenshots are not appearing. I'm excited to share more repos and deployed applications as I build more. Anyone curious can view my code at the repo link below. </p>
                         <div className="project-detail-container">
-                            <p className="project-detail">Repo: <Link className="project-link" to="https://gitlab.com/macstephens/project-beta/-/tree/layout-experiment">GitHub</Link></p>
+                            <p className="project-detail">Repo: <Link className="project-link" to="https://github.com/SlySkillet/simons-developer-portfolio/">GitHub</Link></p>
                         </div>
                         <div className="project-detail-container">
                             <p className="project-detail">React | Javascript </p>
@@ -247,9 +247,9 @@ function Projects(){
                             <SiReact className="tech-icon" />
                             <SiJavascript className="tech-icon" />
                         </div>
-                        <p className="project-description">This portfolio housing my projects is a project in itself. I built this from scratch using React and deployed it with github pages. I am not providing any screenshots for this one, anyone reading this is already looking at the live site. This is a work in progress, one I will refactor and expand going forward. I'm excited to share more repos and deployed applications as I build more. Anyone curious can view my code at the repo link below. </p>
+                        <p className="project-description">This portfolio housing my projects is a project in itself. I built this from scratch using React and deployed it with github pages. I am not providing any screenshots for this one, anyone reading this is already looking at the live site. This is a work in progress, one I will refactor and expand going forward. I am still working on image hosting for this site and I apologize if screenshots are not appearing. I'm excited to share more repos and deployed applications as I build more. Anyone curious can view my code at the repo link below. </p>
                         <div className="project-detail-container">
-                            <p className="project-detail">Repo: <Link className="project-link" to="https://gitlab.com/macstephens/project-beta/-/tree/layout-experiment">GitHub</Link></p>
+                            <p className="project-detail">Repo: <Link className="project-link" to="https://github.com/SlySkillet/simons-developer-portfolio/">GitHub</Link></p>
                         </div>
                         <div className="project-detail-container">
                             <p className="project-detail">React | Javascript </p>
