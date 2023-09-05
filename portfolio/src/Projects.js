@@ -104,7 +104,7 @@ function Projects(){
                         </div>
                         <p className="project-description">I created this peer-to-peer marketplace application from scratch in a team of four cohort-mates at Hack Reactor. We began with the idea to build a platform housing informal classes for local people to share their knowledge, acquire new skills and foster community. This was my first experience taking a full stack application from seed to deployment. Over 6 weeks we wire-framed our vision for the application, built a development environment with docker, created our backend using Fast API and a SQL database, and created a dynamic user interface with React.js. This was a lesson in iterative development and agile methodology. Working in a team like this was a hands on lesson in Git workflow and general project organization. We used Linear to create and assign tickets and linked it up with Git Lab where we filled our merge requests. I am particularly proud of my work in implementing the Google Maps API and Redux toolkit into this project. The map centers on the authenticated user's address provided in their account information and accessed through the Redux store. Learning to work with global state and Google API were my highest priority learning goals in this project and I'm very happy with our product.</p>
                         <div className="project-detail-container">
-                            <p className="project-detail">Deployed app: <Link className="project-link" to="https://luckythirteen.gitlab.io/plunge/">Plunge</Link> | Repo: <Link className="project-link" to="https://gitlab.com/luckythirteen/plunge">GitLab</Link></p>
+                            <p className="project-detail">Deployed app: <Link className="project-link" to="https://luckythirteen.gitlab.io/plunge/" target="_blank" rel="noopener noreferrer">Plunge</Link> | Repo: <Link className="project-link" to="https://gitlab.com/luckythirteen/plunge" target="_blank" rel="noopener noreferrer">GitLab</Link></p>
                         </div>
                         <div className="project-detail-container">
                             <p className="project-detail">React | FastAPI | Python | Javascript | SQL | GoogleMaps</p>
@@ -123,7 +123,7 @@ function Projects(){
                         </div>
                         <p className="project-description">This portfolio housing my projects is a project in itself. I built this from scratch using React and deployed it with github pages. I am not providing any screenshots for this one, anyone reading this is already looking at the live site. This is a work in progress, one I will refactor and expand going forward. I am still working on image hosting for this site and I apologize if screenshots are not appearing. I'm excited to share more repos and deployed applications as I build more. Anyone curious can view my code at the repo link below. </p>
                         <div className="project-detail-container">
-                            <p className="project-detail">Repo: <Link className="project-link" to="https://github.com/SlySkillet/simons-developer-portfolio/">GitHub</Link></p>
+                            <p className="project-detail">Repo: <Link className="project-link" to="https://github.com/SlySkillet/simons-developer-portfolio/" target="_blank" rel="noopener noreferrer">GitHub</Link></p>
                         </div>
                         <div className="project-detail-container">
                             <p className="project-detail">React | Javascript </p>
@@ -174,7 +174,7 @@ function Projects(){
                         </div>
                         <p className="project-description">This was a challenging project I took on in the second module of Hack Reactor. Many thanks to my partner Mac Stephens! Together we put together three microservices to handle an auto-dealership's inventory, services and sales. After completing a functional application, I did some experimenting with the user interface and gained some valuable experience incorporating bootstrap and custom css in React.</p>
                         <div className="project-detail-container">
-                            <p className="project-detail">Repo: <Link className="project-link" to="https://gitlab.com/macstephens/project-beta/-/tree/layout-experiment">GitLab</Link></p>
+                            <p className="project-detail">Repo: <Link className="project-link" to="https://gitlab.com/macstephens/project-beta/-/tree/layout-experiment" target="_blank" rel="noopener noreferrer">GitLab</Link></p>
                         </div>
                         <div className="project-detail-container">
                             <p className="project-detail">Django | React | Python | Javascript | Docker</p>
@@ -223,7 +223,7 @@ function Projects(){
                         </div>
                         <p className="project-description">This is the first application I built from scratch using Django. It is a task manager for a contributors to a project to organize and visualize team progress. This was my first try at implementing a 3rd party api (plotly) and data visualization. I built a full stack application from scratch giving a project manager the ability to assign and monitor progress through a clean user interface with Django 4 framework. I inncorporated gantt charts in the user interface to provide visual representation of project tasks, their due dates and progress towards completion by integrating Plotly API.</p>
                         <div className="project-detail-container">
-                            <p className="project-detail">Repo: <Link className="project-link" to="https://gitlab.com/SlySkillet/project-alpha-apr/-/tree/chart_experiment?ref_type=heads">GitLab</Link></p>
+                            <p className="project-detail">Repo: <Link className="project-link" to="https://gitlab.com/SlySkillet/project-alpha-apr/-/tree/chart_experiment?ref_type=heads" target="_blank" rel="noopener noreferrer">GitLab</Link></p>
                         </div>
                         <div className="project-detail-container">
                             <p className="project-detail">Django | Python | Plotly API</p>
@@ -249,7 +249,7 @@ function Projects(){
                         </div>
                         <p className="project-description">This portfolio housing my projects is a project in itself. I built this from scratch using React and deployed it with github pages. I am not providing any screenshots for this one, anyone reading this is already looking at the live site. This is a work in progress, one I will refactor and expand going forward. I am still working on image hosting for this site and I apologize if screenshots are not appearing. I'm excited to share more repos and deployed applications as I build more. Anyone curious can view my code at the repo link below. </p>
                         <div className="project-detail-container">
-                            <p className="project-detail">Repo: <Link className="project-link" to="https://github.com/SlySkillet/simons-developer-portfolio/">GitHub</Link></p>
+                            <p className="project-detail">Repo: <Link className="project-link" to="https://github.com/SlySkillet/simons-developer-portfolio/" target="_blank" rel="noopener noreferrer">GitHub</Link></p>
                         </div>
                         <div className="project-detail-container">
                             <p className="project-detail">React | Javascript </p>
@@ -312,7 +312,7 @@ function Projects(){
                         </div>
                         <p className="project-description">I created this peer-to-peer marketplace application from scratch in a team of four cohort-mates at Hack Reactor. We began with the idea to build a platform housing informal classes for local people to share their knowledge, acquire new skills and foster community. This was my first experience taking a full stack application from seed to deployment. Over 6 weeks we wire-framed our vision for the application, built a development environment with docker, created our backend using Fast API and a SQL database, and created a dynamic user interface with React.js. This was a lesson in iterative development and agile methodology. Working in a team like this was a hands on lesson in Git workflow and general project organization. We used Linear to create and assign tickets and linked it up with Git Lab where we filled our merge requests. I am particularly proud of my work in implementing the Google Maps API and Redux toolkit into this project. The map centers on the authenticated user's address provided in their account information and accessed through the Redux store. Learning to work with global state and Google API were my highest priority learning goals in this project and I'm very happy with our product.</p>
                         <div className="project-detail-container">
-                            <p className="project-detail">Deployed app: <Link className="project-link" to="https://luckythirteen.gitlab.io/plunge/">Plunge</Link> | Repo: <Link className="project-link" to="https://gitlab.com/luckythirteen/plunge">GitLab</Link></p>
+                            <p className="project-detail">Deployed app: <Link className="project-link" to="https://luckythirteen.gitlab.io/plunge/" target="_blank" rel="noopener noreferrer">Plunge</Link> | Repo: <Link className="project-link" to="https://gitlab.com/luckythirteen/plunge" target="_blank" rel="noopener noreferrer">GitLab</Link></p>
                         </div>
                         <div className="project-detail-container">
                             <p className="project-detail">React | FastAPI | Python | Javascript | SQL | GoogleMaps</p>
@@ -363,7 +363,7 @@ function Projects(){
                         </div>
                         <p className="project-description">This was a challenging project I took on in the second module of Hack Reactor. Many thanks to my partner Mac Stephens! Together we put together three microservices to handle an auto-dealership's inventory, services and sales. After completing a functional application, I did some experimenting with the user interface and gained some valuable experience incorporating bootstrap and custom css in React.</p>
                         <div className="project-detail-container">
-                            <p className="project-detail">Repo: <Link className="project-link" to="https://gitlab.com/macstephens/project-beta/-/tree/layout-experiment">GitLab</Link></p>
+                            <p className="project-detail">Repo: <Link className="project-link" to="https://gitlab.com/macstephens/project-beta/-/tree/layout-experiment" target="_blank" rel="noopener noreferrer">GitLab</Link></p>
                         </div>
                         <div className="project-detail-container">
                             <p className="project-detail">Django | React | Python | Javascript | Docker</p>
@@ -412,7 +412,7 @@ function Projects(){
                         </div>
                         <p className="project-description">This is the first application I built from scratch using Django. It is a task manager for a contributors to a project to organize and visualize team progress. This was my first try at implementing a 3rd party api (plotly) and data visualization. I built a full stack application from scratch giving a project manager the ability to assign and monitor progress through a clean user interface with Django 4 framework. I inncorporated gantt charts in the user interface to provide visual representation of project tasks, their due dates and progress towards completion by integrating Plotly API.</p>
                         <div className="project-detail-container">
-                            <p className="project-detail">Repo: <Link className="project-link" to="https://gitlab.com/SlySkillet/project-alpha-apr/-/tree/chart_experiment?ref_type=heads">GitLab</Link></p>
+                            <p className="project-detail">Repo: <Link className="project-link" to="https://gitlab.com/SlySkillet/project-alpha-apr/-/tree/chart_experiment?ref_type=heads" target="_blank" rel="noopener noreferrer">GitLab</Link></p>
                         </div>
                         <div className="project-detail-container">
                             <p className="project-detail">Django | Python | Plotly API</p>
