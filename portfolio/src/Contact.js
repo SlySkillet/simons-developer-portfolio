@@ -15,8 +15,8 @@ function Contact(){
                 <div className="project-content contact-container">
                     <h3 className="contact-subtitle">Social:</h3>
                     <div className="contact-links-container">
-                        <Link to="https://www.linkedin.com/in/simon-conrad/"><Button variant="outline-info">LinkedIn < FaLinkedin /></Button></Link>
-                        <Link to="https://github.com/SlySkillet"><Button variant="outline-info">GitHub < FaGithubAlt /></Button></Link>
+                        <Link to="https://www.linkedin.com/in/simon-conrad/" target="_blank" rel="noopener noreferrer"><Button variant="outline-info">LinkedIn < FaLinkedin /></Button></Link>
+                        <Link to="https://github.com/SlySkillet" target="_blank" rel="noopener noreferrer"><Button variant="outline-info">GitHub < FaGithubAlt /></Button></Link>
                     </div>
                     <h3 className="contact-subtitle">Email:</h3>
                     <p className="contact-email" to="">simondbconrad@gmail.com</p>
