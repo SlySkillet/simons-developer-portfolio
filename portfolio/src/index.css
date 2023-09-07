@@ -233,6 +233,14 @@ h2.project-title::first-letter{
   height:fit-content;
 }
 
+/* from web3 is going great timeline - carrot on box */
+/* @media only screen and (min-width: 901px)
+.timeline-entry.even .timeline-description:after {
+    right: -8px;
+    border-top-width: 1px;
+    border-right-width: 1px;
+} */
+
 .project-header,
 p.project-description {
   margin-left: 5px;
