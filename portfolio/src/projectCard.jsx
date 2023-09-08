@@ -25,7 +25,7 @@ function ProjectCard({
 }) {
     const [projectModal, setProjectModal] = useState(false)
 
-    // const handleCloseProjectModal = () => setProjectModal(false)
+    const handleCloseProjectModal = () => setProjectModal(false)
     const handleShowProjectModal = () => setProjectModal(true)
     return(
     <div className="project-content">
@@ -40,36 +40,26 @@ function ProjectCard({
             </Button>)
 })}
     </div>
-    {/* <Modal show={projectModal} onHide={handleCloseProjectModal} size="xl">
+    <Modal show={projectModal} onHide={handleCloseProjectModal} size="xl">
             <Modal.Header closeButton>
             <Modal.Title>{projectTitle}</Modal.Title>
             </Modal.Header>
             <Modal.Body>
             <Carousel data-bs-theme="dark" indicators={false}>
-                <Carousel.Item>
-                    <img
-                    className="d-block w-100"
-                    src={imageUrls[0]}
-                    alt="First slide"
-                    />
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                    className="d-block w-100"
-                    src={imageUrls[1]}
-                    alt="Second slide"
-                    />
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                    className="d-block w-100"
-                    src={imageUrls[2]}
-                    alt="Third slide"
-                    />
-                </Carousel.Item>
+                {imageUrls.map((url) => {
+                    return (
+                        <Carousel.Item key={url}>
+                            <img
+                            className="d-block w-100"
+                            src={url}
+                            alt="screenshot"
+                            />
+                        </Carousel.Item>
+                    )
+                })}
                 </Carousel>
             </Modal.Body>
-    </Modal> */}
+    </Modal>
     {/* <div className="tech-icons-container">
         {techStack.map((icon) => (
             <div key={idx} >{icon}</div>
