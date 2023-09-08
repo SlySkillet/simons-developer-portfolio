@@ -17,14 +17,16 @@ function ProjectCard({
     projectTitle,
     completedDate,
     imageUrls,
+    imageWidth,
     techStack,
     description,
     liveLink,
     repoLink
 }) {
-    const [showPlunge, setShowPlunge] = useState(false)
-    const handleClosePlunge = () => setShowPlunge(false)
-    const handleShowPlunge = () => setShowPlunge(true)
+    const [projectModal, setProjectModal] = useState(false)
+
+    // const handleCloseProjectModal = () => setProjectModal(false)
+    const handleShowProjectModal = () => setProjectModal(true)
     return(
     <div className="project-content">
         <div className="project-header">
@@ -32,17 +34,13 @@ function ProjectCard({
             <p className="shaded-text">{completedDate}</p>
         </div>
     <div className="screenshots-container">
-        <Button onClick={handleShowPlunge}>
-            <img className="screenshot" src={imageUrls[0]} alt="main page" width="170"/>
-        </Button>
-        <Button onClick={handleShowPlunge}>
-            <img className="screenshot" src={imageUrls[1]} alt="location page" width="170"/>
-        </Button>
-        <Button onClick={handleShowPlunge}>
-            <img className="screenshot" src={imageUrls[2]} alt="categories page" width="170"/>
-        </Button>
+        {imageUrls.map((url) => {
+            return (<Button onClick={handleShowProjectModal} key={url}>
+                <img className="screenshot" src={url} alt="screenshot" width={imageWidth}/>
+            </Button>)
+})}
     </div>
-    <Modal show={showPlunge} onHide={handleClosePlunge} size="xl">
+    {/* <Modal show={projectModal} onHide={handleCloseProjectModal} size="xl">
             <Modal.Header closeButton>
             <Modal.Title>{projectTitle}</Modal.Title>
             </Modal.Header>
@@ -71,19 +69,19 @@ function ProjectCard({
                 </Carousel.Item>
                 </Carousel>
             </Modal.Body>
-    </Modal>
+    </Modal> */}
     {/* <div className="tech-icons-container">
         {techStack.map((icon) => (
             <div key={idx} >{icon}</div>
         ))}
     </div> */}
-    <p className="project-description">{description}</p>
+    {/* <p className="project-description">{description}</p>
     <div className="project-detail-container">
         <p className="project-detail">Deployed app: <Link className="project-link" to="https://luckythirteen.gitlab.io/plunge/" target="_blank" rel="noopener noreferrer">Plunge</Link> | Repo: <Link className="project-link" to="https://gitlab.com/luckythirteen/plunge" target="_blank" rel="noopener noreferrer">GitLab</Link></p>
     </div>
     <div className="project-detail-container">
         <p className="project-detail">React | FastAPI | Python | Javascript | SQL | GoogleMaps</p>
-    </div>
+    </div> */}
 </div>
 )
 }

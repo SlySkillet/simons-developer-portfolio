@@ -12,15 +12,21 @@ import { TbBrandDjango } from "react-icons/tb";
 import Button from 'react-bootstrap/Button'
 import Modal from 'react-bootstrap/Modal'
 import Carousel from 'react-bootstrap/Carousel';
+import ProjectCard from './projectCard';
 
 
 function Projects(){
+    const [projectModal, setProjectModal] = useState(false)
+
     const [showPlunge, setShowPlunge] = useState(false)
     const [showRadCar, setShowRadCar] = useState(false)
     const [showTaskManager, setShowTaskManager] = useState(false)
     const [windowWidth, setWindowWidth] = useState([
         window.innerWidth
     ])
+
+    const handleCloseProjectModal = () => setProjectModal(false)
+    const handleShowProjectModal = () => setProjectModal(true)
 
     const handleClosePlunge = () => setShowPlunge(false)
     const handleShowPlunge = () => setShowPlunge(true)
@@ -40,14 +46,29 @@ function Projects(){
     }, [])
 
     const numberColumns = windowWidth > 1360 ? 2 : 1
-    console.log(windowWidth)
 
     if (numberColumns === 2){
         return(
             <div className="projects-container">
                 <h2 className="project-title">Projects</h2>
                 <div className="project-container left">
-                    <div className="project-content">
+                    <ProjectCard
+                        projectTitle={"Plunge"}
+                        completedDate={"August, 2023"}
+                        imageUrls={
+                            [
+                                "https://res.cloudinary.com/ddgt67wcb/image/upload/v1694186839/project_screenshots/plunge_screenshots/main-page_revxhz.png",
+                                "https://res.cloudinary.com/ddgt67wcb/image/upload/v1694186841/project_screenshots/plunge_screenshots/location-page_myt9ii.png",
+                                "https://res.cloudinary.com/ddgt67wcb/image/upload/v1694186838/project_screenshots/plunge_screenshots/categories-page_d4shhc.png"
+                            ]
+                        }
+                        imageWidth={"170"}
+                        techStack={["tech"]}
+                        description={"description"}
+                        liveLink={"https://luckythirteen.gitlab.io/plunge/"}
+                        repoLink={"https://gitlab.com/luckythirteen/plunge"}
+                    />
+                    {/* <div className="project-content">
                         <div className="project-header">
                         <h5 className="project-description title">Plunge</h5>
                         <p className="shaded-text">August, 2023</p>
@@ -109,7 +130,7 @@ function Projects(){
                         <div className="project-detail-container">
                             <p className="project-detail">React | FastAPI | Python | Javascript | SQL | GoogleMaps</p>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
                 <div className="project-container right">
                 <div className="project-content">
