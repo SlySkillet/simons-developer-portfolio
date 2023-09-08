@@ -41,30 +41,30 @@ function ProjectCard({
 })}
     </div>
     <Modal show={projectModal} onHide={handleCloseProjectModal} size="xl">
-            <Modal.Header closeButton>
-            <Modal.Title>{projectTitle}</Modal.Title>
-            </Modal.Header>
-            <Modal.Body>
-            <Carousel data-bs-theme="dark" indicators={false}>
-                {imageUrls.map((url) => {
-                    return (
-                        <Carousel.Item key={url}>
-                            <img
+        <Modal.Header closeButton>
+        <Modal.Title>{projectTitle}</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+        <Carousel data-bs-theme="dark" indicators={false}>
+            {imageUrls.map((url) => {
+                return (
+                    <Carousel.Item key={url}>
+                        <img
                             className="d-block w-100"
                             src={url}
                             alt="screenshot"
-                            />
-                        </Carousel.Item>
-                    )
-                })}
-                </Carousel>
-            </Modal.Body>
+                        />
+                    </Carousel.Item>
+                )
+            })}
+            </Carousel>
+        </Modal.Body>
     </Modal>
-    {/* <div className="tech-icons-container">
+    <div className="tech-icons-container">
         {techStack.map((icon) => (
-            <div key={idx} >{icon}</div>
+            <div className="tech-icon" key={icon} >{icon}</div>
         ))}
-    </div> */}
+    </div>
     {/* <p className="project-description">{description}</p>
     <div className="project-detail-container">
         <p className="project-detail">Deployed app: <Link className="project-link" to="https://luckythirteen.gitlab.io/plunge/" target="_blank" rel="noopener noreferrer">Plunge</Link> | Repo: <Link className="project-link" to="https://gitlab.com/luckythirteen/plunge" target="_blank" rel="noopener noreferrer">GitLab</Link></p>

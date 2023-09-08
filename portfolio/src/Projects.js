@@ -63,7 +63,15 @@ function Projects(){
                             ]
                         }
                         imageWidth={"170"}
-                        techStack={["tech"]}
+                        techStack={[
+                            <SiFastapi />,
+                            <SiReact />,
+                            <SiPython />,
+                            <SiJavascript  />,
+                            <SiPostgresql  />,
+                            <SiGooglecloud  />,
+                            <SiDocker  />,
+                        ]}
                         description={"description"}
                         liveLink={"https://luckythirteen.gitlab.io/plunge/"}
                         repoLink={"https://gitlab.com/luckythirteen/plunge"}
