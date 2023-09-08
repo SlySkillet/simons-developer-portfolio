@@ -65,11 +65,11 @@ function ProjectCard({
             <div className="tech-icon" key={icon} >{icon}</div>
         ))}
     </div>
-    {/* <p className="project-description">{description}</p>
-    <div className="project-detail-container">
+    <p className="project-description">{description}</p>
+    {/* <div className="project-detail-container">
         <p className="project-detail">Deployed app: <Link className="project-link" to="https://luckythirteen.gitlab.io/plunge/" target="_blank" rel="noopener noreferrer">Plunge</Link> | Repo: <Link className="project-link" to="https://gitlab.com/luckythirteen/plunge" target="_blank" rel="noopener noreferrer">GitLab</Link></p>
-    </div>
-    <div className="project-detail-container">
+    </div> */}
+    {/* <div className="project-detail-container">
         <p className="project-detail">React | FastAPI | Python | Javascript | SQL | GoogleMaps</p>
     </div> */}
 </div>
