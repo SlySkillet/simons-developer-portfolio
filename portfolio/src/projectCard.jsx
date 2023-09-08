@@ -1,14 +1,5 @@
-import { React, useState, useEffect } from 'react'
+import { React, useState} from 'react'
 import { Link } from 'react-router-dom'
-import { SiFastapi
-        , SiReact
-        , SiPython
-        , SiJavascript
-        , SiPostgresql
-        , SiGooglecloud
-        , SiPlotly
-        , SiDocker } from 'react-icons/si'
-import { TbBrandDjango } from "react-icons/tb";
 import Button from 'react-bootstrap/Button'
 import Modal from 'react-bootstrap/Modal'
 import Carousel from 'react-bootstrap/Carousel';
@@ -18,15 +9,33 @@ function ProjectCard({
     completedDate,
     imageUrls,
     imageWidth,
-    techStack,
+    techIcons,
     description,
     liveLink,
-    repoLink
+    repoLink,
+    techStack
 }) {
     const [projectModal, setProjectModal] = useState(false)
 
     const handleCloseProjectModal = () => setProjectModal(false)
     const handleShowProjectModal = () => setProjectModal(true)
+
+    const projectLinkJSX = (liveLink, repoLink) => {
+        if (liveLink) {
+            return (
+                <p className="project-detail">
+                    Deployed app: <Link className="project-link" to={liveLink} target="_blank" rel="noopener noreferrer"> {projectTitle} </Link> | Repo: <Link className="project-link" to={repoLink} target="_blank" rel="noopener noreferrer"> GitHub </Link>
+                </p>
+            )
+        } else {
+            return (
+                <p className="project-detail">
+                    Repo: <Link className="project-link" to={repoLink} target="_blank" rel="noopener noreferrer"> GitHub </Link>
+                </p>
+            )
+        }
+    }
+
     return(
     <div className="project-content">
         <div className="project-header">
@@ -61,17 +70,17 @@ function ProjectCard({
         </Modal.Body>
     </Modal>
     <div className="tech-icons-container">
-        {techStack.map((icon) => (
+        {techIcons.map((icon) => (
             <div className="tech-icon" key={icon} >{icon}</div>
         ))}
     </div>
     <p className="project-description">{description}</p>
-    {/* <div className="project-detail-container">
-        <p className="project-detail">Deployed app: <Link className="project-link" to="https://luckythirteen.gitlab.io/plunge/" target="_blank" rel="noopener noreferrer">Plunge</Link> | Repo: <Link className="project-link" to="https://gitlab.com/luckythirteen/plunge" target="_blank" rel="noopener noreferrer">GitLab</Link></p>
-    </div> */}
-    {/* <div className="project-detail-container">
-        <p className="project-detail">React | FastAPI | Python | Javascript | SQL | GoogleMaps</p>
-    </div> */}
+    <div className="project-detail-container">
+            {projectLinkJSX(liveLink, repoLink)}
+    </div>
+    <div className="project-detail-container">
+        <p className="project-detail">{techStack}</p>
+    </div>
 </div>
 )
 }
