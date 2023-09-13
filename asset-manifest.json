@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.97e7f1d2.css",
-    "main.js": "/static/js/main.fe8c4dc5.js",
-    "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
-    "static/media/portrait.JPEG": "/static/media/portrait.0a240398167293dad70c.JPEG",
-    "static/media/simon_conrad_resume_current.pdf": "/static/media/simon_conrad_resume_current.39c527f63423593ab38d.pdf",
-    "index.html": "/index.html",
-    "main.97e7f1d2.css.map": "/static/css/main.97e7f1d2.css.map",
-    "main.fe8c4dc5.js.map": "/static/js/main.fe8c4dc5.js.map",
-    "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
+    "main.css": "/simons-developer-portfolio/static/css/main.97e7f1d2.css",
+    "main.js": "/simons-developer-portfolio/static/js/main.b37de25c.js",
+    "static/js/787.1ed0c42c.chunk.js": "/simons-developer-portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/portrait.JPEG": "/simons-developer-portfolio/static/media/portrait.0a240398167293dad70c.JPEG",
+    "static/media/simon_conrad_resume_current.pdf": "/simons-developer-portfolio/static/media/simon_conrad_resume_current.39c527f63423593ab38d.pdf",
+    "index.html": "/simons-developer-portfolio/index.html",
+    "main.97e7f1d2.css.map": "/simons-developer-portfolio/static/css/main.97e7f1d2.css.map",
+    "main.b37de25c.js.map": "/simons-developer-portfolio/static/js/main.b37de25c.js.map",
+    "787.1ed0c42c.chunk.js.map": "/simons-developer-portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.97e7f1d2.css",
-    "static/js/main.fe8c4dc5.js"
+    "static/js/main.b37de25c.js"
   ]
 }
