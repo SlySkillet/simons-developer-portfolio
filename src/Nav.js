@@ -11,7 +11,7 @@ function NavBar(){
                 <Container className="navbar-container">
                     <Navbar.Brand className="brand" href="#/">S.C.</Navbar.Brand>
                     <Nav className="me-auto">
-                        <Nav.Link className="navbar-link" href="#/">About</Nav.Link>
+                        <Nav.Link className="navbar-link" href="#/">Home</Nav.Link>
                         <Nav.Link className="navbar-link" href="#/projects">Projects</Nav.Link>
                         <Nav.Link className="navbar-link" href="#/resume">Resume</Nav.Link>
                         {/* <Nav.Link href="#blog">Blog</Nav.Link> */}
