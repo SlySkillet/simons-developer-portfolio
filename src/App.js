@@ -1,11 +1,10 @@
 import './App.css';
-import { HashRouter, BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import NavBar from './Nav'
-import About from './About'
-import Footer from './Footer'
 import Projects from './Projects';
 import Resume from './Resume';
 import Contact from './Contact'
+import Home from './Home';
 
 function App() {
   return (
@@ -14,8 +13,8 @@ function App() {
       <NavBar />
       <div className="main-container">
         <Routes>
-          <Route path="/" element={ <About /> } />
-          <Route path="projects/" element={ <Projects />} />
+          <Route path="/" element={ <Home /> } />
+          {/* <Route path="projects/" element={ <Projects />} /> */}
           <Route path="resume/" element={ <Resume />} />
           <Route path="contact/" element={ <Contact /> }/>
         </Routes>
