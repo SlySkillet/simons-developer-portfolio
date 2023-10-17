@@ -9,25 +9,13 @@ import { SiFastapi
         , SiPlotly
         , SiDocker } from 'react-icons/si'
 import { TbBrandDjango } from "react-icons/tb";
-import Button from 'react-bootstrap/Button'
-import Modal from 'react-bootstrap/Modal'
-import Carousel from 'react-bootstrap/Carousel';
+import ProjectCard from './projectCard';
 
 
 function Projects(){
-    const [showPlunge, setShowPlunge] = useState(false)
-    const [showRadCar, setShowRadCar] = useState(false)
-    const [showTaskManager, setShowTaskManager] = useState(false)
     const [windowWidth, setWindowWidth] = useState([
         window.innerWidth
     ])
-
-    const handleClosePlunge = () => setShowPlunge(false)
-    const handleShowPlunge = () => setShowPlunge(true)
-    const handleCloseRadCar = () => setShowRadCar(false)
-    const handleShowRadCar = () => setShowRadCar(true)
-    const handleCloseTaskManager = () => setShowTaskManager(false)
-    const handleShowTaskManager = () => setShowTaskManager(true)
 
     useEffect(() => {
         const handleWindowResize = () => {
@@ -40,76 +28,37 @@ function Projects(){
     }, [])
 
     const numberColumns = windowWidth > 1360 ? 2 : 1
-    console.log(windowWidth)
 
     if (numberColumns === 2){
         return(
             <div className="projects-container">
                 <h2 className="project-title">Projects</h2>
                 <div className="project-container left">
-                    <div className="project-content">
-                        <div className="project-header">
-                        <h5 className="project-description title">Plunge</h5>
-                        <p className="shaded-text">August, 2023</p>
-                        </div>
-                        <div className="screenshots-container">
-                            <Button onClick={handleShowPlunge}>
-                                <img className="screenshot" src={"https://res.cloudinary.com/ddgt67wcb/image/upload/v1694186839/project_screenshots/plunge_screenshots/main-page_revxhz.png"} alt="main page" width="170"/>
-                            </Button>
-                            <Button onClick={handleShowPlunge}>
-                                <img className="screenshot" src={"https://res.cloudinary.com/ddgt67wcb/image/upload/v1694186841/project_screenshots/plunge_screenshots/location-page_myt9ii.png"} alt="location page" width="170"/>
-                            </Button>
-                            <Button onClick={handleShowPlunge}>
-                                <img className="screenshot" src={"https://res.cloudinary.com/ddgt67wcb/image/upload/v1694186838/project_screenshots/plunge_screenshots/categories-page_d4shhc.png"} alt="categories page" width="170"/>
-                            </Button>
-                        </div>
-                        <Modal show={showPlunge} onHide={handleClosePlunge} size="xl">
-                                <Modal.Header closeButton>
-                                <Modal.Title>Plunge</Modal.Title>
-                                </Modal.Header>
-                                <Modal.Body>
-                                <Carousel data-bs-theme="dark" indicators={false}>
-                                    <Carousel.Item>
-                                        <img
-                                        className="d-block w-100"
-                                        src="https://res.cloudinary.com/ddgt67wcb/image/upload/v1694186839/project_screenshots/plunge_screenshots/main-page_revxhz.png"
-                                        alt="First slide"
-                                        />
-                                    </Carousel.Item>
-                                    <Carousel.Item>
-                                        <img
-                                        className="d-block w-100"
-                                        src="https://res.cloudinary.com/ddgt67wcb/image/upload/v1694186841/project_screenshots/plunge_screenshots/location-page_myt9ii.png"
-                                        alt="Second slide"
-                                        />
-                                    </Carousel.Item>
-                                    <Carousel.Item>
-                                        <img
-                                        className="d-block w-100"
-                                        src="https://res.cloudinary.com/ddgt67wcb/image/upload/v1694186838/project_screenshots/plunge_screenshots/categories-page_d4shhc.png"
-                                        alt="Third slide"
-                                        />
-                                    </Carousel.Item>
-                                    </Carousel>
-                                </Modal.Body>
-                        </Modal>
-                        <div className="tech-icons-container">
-                            <SiFastapi className="tech-icon"/>
-                            <SiReact className="tech-icon"/>
-                            <SiPython className="tech-icon"/>
-                            <SiJavascript className="tech-icon" />
-                            <SiPostgresql className="tech-icon" />
-                            <SiGooglecloud className="tech-icon" />
-                            <SiDocker className="tech-icon" />
-                        </div>
-                        <p className="project-description">I created this peer-to-peer marketplace application from scratch in a team of four cohort-mates at Hack Reactor. We began with the idea to build a platform housing informal classes for local people to share their knowledge, acquire new skills and foster community. This was my first experience taking a full stack application from seed to deployment. Over 6 weeks we wire-framed our vision for the application, built a development environment with docker, created our backend using Fast API and a SQL database, and created a dynamic user interface with React.js. This was a lesson in iterative development and agile methodology. Working in a team like this was a hands on lesson in Git workflow and general project organization. We used Linear to create and assign tickets and linked it up with Git Lab where we filled our merge requests. I am particularly proud of my work in implementing the Google Maps API and Redux toolkit into this project. The map centers on the authenticated user's address provided in their account information and accessed through the Redux store. Learning to work with global state and Google API were my highest priority learning goals in this project and I'm very happy with our product.</p>
-                        <div className="project-detail-container">
-                            <p className="project-detail">Deployed app: <Link className="project-link" to="https://luckythirteen.gitlab.io/plunge/" target="_blank" rel="noopener noreferrer">Plunge</Link> | Repo: <Link className="project-link" to="https://gitlab.com/luckythirteen/plunge" target="_blank" rel="noopener noreferrer">GitLab</Link></p>
-                        </div>
-                        <div className="project-detail-container">
-                            <p className="project-detail">React | FastAPI | Python | Javascript | SQL | GoogleMaps</p>
-                        </div>
-                    </div>
+                    <ProjectCard
+                        projectTitle={"Plunge"}
+                        completedDate={"August, 2023"}
+                        imageUrls={
+                            [
+                                "https://res.cloudinary.com/ddgt67wcb/image/upload/v1694186839/project_screenshots/plunge_screenshots/main-page_revxhz.png",
+                                "https://res.cloudinary.com/ddgt67wcb/image/upload/v1694186841/project_screenshots/plunge_screenshots/location-page_myt9ii.png",
+                                "https://res.cloudinary.com/ddgt67wcb/image/upload/v1694186838/project_screenshots/plunge_screenshots/categories-page_d4shhc.png"
+                            ]
+                        }
+                        imageWidth={"170"}
+                        techIcons={[
+                            <SiFastapi />,
+                            <SiReact />,
+                            <SiPython />,
+                            <SiJavascript  />,
+                            <SiPostgresql  />,
+                            <SiGooglecloud  />,
+                            <SiDocker  />,
+                        ]}
+                        description={"I created this peer-to-peer marketplace application from scratch in a team of four cohort-mates at Hack Reactor. We began with the idea to build a platform housing informal classes for local people to share their knowledge, acquire new skills and foster community. This was my first experience taking a full stack application from seed to deployment. Over 6 weeks we wire-framed our vision for the application, built a development environment with docker, created our backend using Fast API and a SQL database, and created a dynamic user interface with React.js. This was a lesson in iterative development and agile methodology. Working in a team like this was a hands on lesson in Git workflow and general project organization. We used Linear to create and assign tickets and linked it up with Git Lab where we filled our merge requests. I am particularly proud of my work in implementing the Google Maps API and Redux toolkit into this project. The map centers on the authenticated user's address provided in their account information and accessed through the Redux store. Learning to work with global state and Google API were my highest priority learning goals in this project and I'm very happy with our product."}
+                        liveLink={"https://luckythirteen.gitlab.io/plunge/"}
+                        repoLink={"https://github.com/SlySkillet/plunge"}
+                        techStack={`React | FastAPI | Python | Javascript | SQL | GoogleMaps`}
+                    />
                 </div>
                 <div className="project-container right">
                 <div className="project-content">
@@ -121,7 +70,7 @@ function Projects(){
                             <SiReact className="tech-icon" />
                             <SiJavascript className="tech-icon" />
                         </div>
-                        <p className="project-description">This portfolio housing my projects is a project in itself. I built this from scratch using React and deployed it with github pages. I am not providing any screenshots for this one, anyone reading this is already looking at the live site. This is a work in progress, one I will refactor and expand going forward. I am still working on image hosting for this site and I apologize if screenshots are not appearing. I'm excited to share more repos and deployed applications as I build more. Anyone curious can view my code at the repo link below. </p>
+                        <p className="project-description">I built the site you are viewing now from scratch using React and deployed it with GitHub pages. I really enjoyed putting this together and trying out some new design ideas in the process. This is a work in progress, one I will refactor and expand going forward. See my code at the repo-link below.</p>
                         <div className="project-detail-container">
                             <p className="project-detail">Repo: <Link className="project-link" to="https://github.com/SlySkillet/simons-developer-portfolio/" target="_blank" rel="noopener noreferrer">GitHub</Link></p>
                         </div>
@@ -129,106 +78,44 @@ function Projects(){
                             <p className="project-detail">React | Javascript </p>
                         </div>
                     </div>
-                    <div className="project-content">
-                    <div className="project-header">
-                        <h5 className="project-description title">RadCar Automobiles</h5>
-                        <p className="shaded-text">June, 2023</p>
-                    </div>
-                        <div className="screenshots-container">
-                            <Button onClick={handleShowRadCar}>
-                                <img className="screenshot" src={"https://res.cloudinary.com/ddgt67wcb/image/upload/v1694186842/project_screenshots/rad_car/radcar_main_page_d6cpoa.png"} alt="main page" width="170"/>
-                            </Button>
-                            <Button onClick={handleShowRadCar}>
-                                <img className="screenshot" src={"https://res.cloudinary.com/ddgt67wcb/image/upload/v1694186842/project_screenshots/rad_car/service_history_ppbeum.png"} alt="location page" width="170"/>
-                            </Button>
-                        </div>
-                        <Modal show={showRadCar} onHide={handleCloseRadCar} size="xl">
-                                <Modal.Header closeButton>
-                                <Modal.Title>RadCar Automobiles</Modal.Title>
-                                </Modal.Header>
-                                <Modal.Body >
-                                <Carousel data-bs-theme="dark" indicators={false}>
-                                    <Carousel.Item>
-                                        <img
-                                        className="d-block w-100 radcar-modal-img"
-                                        src="https://res.cloudinary.com/ddgt67wcb/image/upload/v1694186842/project_screenshots/rad_car/radcar_main_page_d6cpoa.png"
-                                        alt="First slide"
-                                        />
-                                    </Carousel.Item>
-                                    <Carousel.Item>
-                                        <img
-                                        className="d-block w-100"
-                                        src="https://res.cloudinary.com/ddgt67wcb/image/upload/v1694186842/project_screenshots/rad_car/service_history_ppbeum.png"
-                                        alt="Second slide"
-                                        />
-                                    </Carousel.Item>
-                                    </Carousel>
-                                </Modal.Body>
-                        </Modal>
-                        <div className="tech-icons-container">
-                            <SiReact className="tech-icon" />
-                            <TbBrandDjango className="tech-icon" />
-                            <SiPython className="tech-icon" />
-                            <SiJavascript className="tech-icon" />
-                            <SiDocker className="tech-icon" />
-                        </div>
-                        <p className="project-description">This was a challenging project I took on in the second module of Hack Reactor. Many thanks to my partner Mac Stephens! Together we put together three microservices to handle an auto-dealership's inventory, services and sales. After completing a functional application, I did some experimenting with the user interface and gained some valuable experience incorporating bootstrap and custom css in React.</p>
-                        <div className="project-detail-container">
-                            <p className="project-detail">Repo: <Link className="project-link" to="https://gitlab.com/macstephens/project-beta/-/tree/layout-experiment" target="_blank" rel="noopener noreferrer">GitLab</Link></p>
-                        </div>
-                        <div className="project-detail-container">
-                            <p className="project-detail">Django | React | Python | Javascript | Docker</p>
-                        </div>
-                    </div>
-                    <div className="project-content">
-                    <div className="project-header">
-                        <h5 className="project-description title">Task Manager</h5>
-                        <p className="shaded-text">April, 2023</p>
-                    </div>
-                        <div className="screenshots-container">
-                            <Button onClick={handleShowTaskManager}>
-                                <img className="screenshot" src={"https://res.cloudinary.com/ddgt67wcb/image/upload/v1694186838/project_screenshots/task_manager/my_tasks_f1tqob.png"} alt="main page" width="170"/>
-                            </Button>
-                            <Button onClick={handleShowTaskManager}>
-                                <img className="screenshot" src={"https://res.cloudinary.com/ddgt67wcb/image/upload/v1694186838/project_screenshots/task_manager/project_view_fv3vby.png"} alt="location page" width="170"/>
-                            </Button>
-                        </div>
-                        <Modal show={showTaskManager} onHide={handleCloseTaskManager} size="xl">
-                                <Modal.Header closeButton>
-                                <Modal.Title>Task Manager</Modal.Title>
-                                </Modal.Header>
-                                <Modal.Body >
-                                <Carousel data-bs-theme="dark" indicators={false}>
-                                    <Carousel.Item>
-                                        <img
-                                        className="d-block w-100"
-                                        src="https://res.cloudinary.com/ddgt67wcb/image/upload/v1694186838/project_screenshots/task_manager/my_tasks_f1tqob.png"
-                                        alt="First slide"
-                                        />
-                                    </Carousel.Item>
-                                    <Carousel.Item>
-                                        <img
-                                        className="d-block w-100"
-                                        src="https://res.cloudinary.com/ddgt67wcb/image/upload/v1694186838/project_screenshots/task_manager/project_view_fv3vby.png"
-                                        alt="Second slide"
-                                        />
-                                    </Carousel.Item>
-                                    </Carousel>
-                                </Modal.Body>
-                        </Modal>
-                        <div className="tech-icons-container">
-                            <TbBrandDjango className="tech-icon" />
-                            <SiPython className="tech-icon" />
-                            <SiPlotly className="tech-icon" />
-                        </div>
-                        <p className="project-description">This is the first application I built from scratch using Django. It is a task manager for a contributors to a project to organize and visualize team progress. This was my first try at implementing a 3rd party api (plotly) and data visualization. I built a full stack application from scratch giving a project manager the ability to assign and monitor progress through a clean user interface with Django 4 framework. I inncorporated gantt charts in the user interface to provide visual representation of project tasks, their due dates and progress towards completion by integrating Plotly API.</p>
-                        <div className="project-detail-container">
-                            <p className="project-detail">Repo: <Link className="project-link" to="https://gitlab.com/SlySkillet/project-alpha-apr/-/tree/chart_experiment?ref_type=heads" target="_blank" rel="noopener noreferrer">GitLab</Link></p>
-                        </div>
-                        <div className="project-detail-container">
-                            <p className="project-detail">Django | Python | Plotly API</p>
-                        </div>
-                    </div>
+                    < ProjectCard
+                        projectTitle={"RadCar Automobiles"}
+                        completedDate={"June, 2023"}
+                        imageUrls={[
+                            "https://res.cloudinary.com/ddgt67wcb/image/upload/v1694186842/project_screenshots/rad_car/radcar_main_page_d6cpoa.png",
+                            "https://res.cloudinary.com/ddgt67wcb/image/upload/v1694186842/project_screenshots/rad_car/service_history_ppbeum.png"
+                        ]}
+                        imageWidth={"170"}
+                        techIcons={[
+                            <SiReact />,
+                            <TbBrandDjango />,
+                            <SiPython />,
+                            <SiJavascript />,
+                            <SiDocker />
+                        ]}
+                        description={"This was a challenging project I took on in the second module of Hack Reactor. Many thanks to my partner Mac Stephens! Together we put together three microservices to handle an auto-dealership's inventory, services and sales. After completing a functional application, I did some experimenting with the user interface and gained some valuable experience incorporating bootstrap and custom css in React."}
+                        liveLink={null}
+                        repoLink={"https://github.com/SlySkillet/radcar/tree/layout-experiment"}
+                        techStack={`Django | React | Python | Javascript | Docker`}
+                    />
+                    < ProjectCard
+                        projectTitle={"Task Manager"}
+                        completedDate={"April, 2023"}
+                        imageUrls={[
+                            "https://res.cloudinary.com/ddgt67wcb/image/upload/v1694186838/project_screenshots/task_manager/my_tasks_f1tqob.png",
+                            "https://res.cloudinary.com/ddgt67wcb/image/upload/v1694186838/project_screenshots/task_manager/project_view_fv3vby.png"
+                        ]}
+                        imageWidth={"170"}
+                        techIcons={[
+                            <TbBrandDjango />,
+                            <SiPython />,
+                            <SiPlotly />
+                        ]}
+                        description={"This is the first application I built from scratch using Django. It is a task manager for a contributors to a project to organize and visualize team progress. This was my first try at implementing a 3rd party api (plotly) and data visualization. I built a full stack application from scratch giving a project manager the ability to assign and monitor progress through a clean user interface with Django 4 framework. I inncorporated gantt charts in the user interface to provide visual representation of project tasks, their due dates and progress towards completion by integrating Plotly API."}
+                        liveLink={null}
+                        repoLink={"https://github.com/SlySkillet/task-manager/tree/chart_experiment"}
+                        techStack={`Django | Python | Plotly API`}
+                    />
                 </div>
             </div>
         )
@@ -247,7 +134,7 @@ function Projects(){
                             <SiReact className="tech-icon" />
                             <SiJavascript className="tech-icon" />
                         </div>
-                        <p className="project-description">This portfolio housing my projects is a project in itself. I built this from scratch using React and deployed it with github pages. I am not providing any screenshots for this one, anyone reading this is already looking at the live site. This is a work in progress, one I will refactor and expand going forward. I am still working on image hosting for this site and I apologize if screenshots are not appearing. I'm excited to share more repos and deployed applications as I build more. Anyone curious can view my code at the repo link below. </p>
+                        <p className="project-description">I built the site you are viewing now from scratch using React and deployed it with GitHub pages. I really enjoyed putting this together and trying out some new design ideas in the process. This is a work in progress, one I will refactor and expand going forward. See my code at the repo-link below. </p>
                         <div className="project-detail-container">
                             <p className="project-detail">Repo: <Link className="project-link" to="https://github.com/SlySkillet/simons-developer-portfolio/" target="_blank" rel="noopener noreferrer">GitHub</Link></p>
                         </div>
@@ -255,173 +142,72 @@ function Projects(){
                             <p className="project-detail">React | Javascript </p>
                         </div>
                     </div>
-                    <div className="project-content">
-                        <div className="project-header">
-                        <h5 className="project-description title">Plunge</h5>
-                        <p className="shaded-text">August, 2023</p>
-                        </div>
-                        <div className="screenshots-container">
-                            <Button onClick={handleShowPlunge}>
-                                <img className="screenshot" src={"https://res.cloudinary.com/ddgt67wcb/image/upload/v1694186839/project_screenshots/plunge_screenshots/main-page_revxhz.png"} alt="main page" width="170"/>
-                            </Button>
-                            <Button onClick={handleShowPlunge}>
-                                <img className="screenshot" src={"https://res.cloudinary.com/ddgt67wcb/image/upload/v1694186841/project_screenshots/plunge_screenshots/location-page_myt9ii.png"} alt="location page" width="170"/>
-                            </Button>
-                            <Button onClick={handleShowPlunge}>
-                                <img className="screenshot" src={"https://res.cloudinary.com/ddgt67wcb/image/upload/v1694186838/project_screenshots/plunge_screenshots/categories-page_d4shhc.png"} alt="categories page" width="170"/>
-                            </Button>
-                        </div>
-                        <Modal show={showPlunge} onHide={handleClosePlunge} size="xl">
-                                <Modal.Header closeButton>
-                                <Modal.Title>Plunge</Modal.Title>
-                                </Modal.Header>
-                                <Modal.Body>
-                                <Carousel data-bs-theme="dark" indicators={false}>
-                                    <Carousel.Item>
-                                        <img
-                                        className="d-block w-100"
-                                        src="https://res.cloudinary.com/ddgt67wcb/image/upload/v1694186839/project_screenshots/plunge_screenshots/main-page_revxhz.png"
-                                        alt="First slide"
-                                        />
-                                    </Carousel.Item>
-                                    <Carousel.Item>
-                                        <img
-                                        className="d-block w-100"
-                                        src="https://res.cloudinary.com/ddgt67wcb/image/upload/v1694186841/project_screenshots/plunge_screenshots/location-page_myt9ii.png"
-                                        alt="Second slide"
-                                        />
-                                    </Carousel.Item>
-                                    <Carousel.Item>
-                                        <img
-                                        className="d-block w-100"
-                                        src="https://res.cloudinary.com/ddgt67wcb/image/upload/v1694186838/project_screenshots/plunge_screenshots/categories-page_d4shhc.png"
-                                        alt="Third slide"
-                                        />
-                                    </Carousel.Item>
-                                    </Carousel>
-                                </Modal.Body>
-                        </Modal>
-                        <div className="tech-icons-container">
-                            <SiFastapi className="tech-icon"/>
-                            <SiReact className="tech-icon"/>
-                            <SiPython className="tech-icon"/>
-                            <SiJavascript className="tech-icon" />
-                            <SiPostgresql className="tech-icon" />
-                            <SiGooglecloud className="tech-icon" />
-                            <SiDocker className="tech-icon" />
-                        </div>
-                        <p className="project-description">I created this peer-to-peer marketplace application from scratch in a team of four cohort-mates at Hack Reactor. We began with the idea to build a platform housing informal classes for local people to share their knowledge, acquire new skills and foster community. This was my first experience taking a full stack application from seed to deployment. Over 6 weeks we wire-framed our vision for the application, built a development environment with docker, created our backend using Fast API and a SQL database, and created a dynamic user interface with React.js. This was a lesson in iterative development and agile methodology. Working in a team like this was a hands on lesson in Git workflow and general project organization. We used Linear to create and assign tickets and linked it up with Git Lab where we filled our merge requests. I am particularly proud of my work in implementing the Google Maps API and Redux toolkit into this project. The map centers on the authenticated user's address provided in their account information and accessed through the Redux store. Learning to work with global state and Google API were my highest priority learning goals in this project and I'm very happy with our product.</p>
-                        <div className="project-detail-container">
-                            <p className="project-detail">Deployed app: <Link className="project-link" to="https://luckythirteen.gitlab.io/plunge/" target="_blank" rel="noopener noreferrer">Plunge</Link> | Repo: <Link className="project-link" to="https://gitlab.com/luckythirteen/plunge" target="_blank" rel="noopener noreferrer">GitLab</Link></p>
-                        </div>
-                        <div className="project-detail-container">
-                            <p className="project-detail">React | FastAPI | Python | Javascript | SQL | GoogleMaps</p>
-                        </div>
-                    </div>
-                    <div className="project-content">
-                    <div className="project-header">
-                        <h5 className="project-description title">RadCar Automobiles</h5>
-                        <p className="shaded-text">June, 2023</p>
-                    </div>
-                        <div className="screenshots-container">
-                            <Button onClick={handleShowRadCar}>
-                                <img className="screenshot" src={"https://res.cloudinary.com/ddgt67wcb/image/upload/v1694186842/project_screenshots/rad_car/radcar_main_page_d6cpoa.png"} alt="main page" width="170"/>
-                            </Button>
-                            <Button onClick={handleShowRadCar}>
-                                <img className="screenshot" src={"https://res.cloudinary.com/ddgt67wcb/image/upload/v1694186842/project_screenshots/rad_car/service_history_ppbeum.png"} alt="location page" width="170"/>
-                            </Button>
-                        </div>
-                        <Modal show={showRadCar} onHide={handleCloseRadCar} size="xl">
-                                <Modal.Header closeButton>
-                                <Modal.Title>RadCar Automobiles</Modal.Title>
-                                </Modal.Header>
-                                <Modal.Body >
-                                <Carousel data-bs-theme="dark" indicators={false}>
-                                    <Carousel.Item>
-                                        <img
-                                        className="d-block w-100 radcar-modal-img"
-                                        src="https://res.cloudinary.com/ddgt67wcb/image/upload/v1694186842/project_screenshots/rad_car/service_history_ppbeum.png"
-                                        alt="First slide"
-                                        />
-                                    </Carousel.Item>
-                                    <Carousel.Item>
-                                        <img
-                                        className="d-block w-100"
-                                        src="https://res.cloudinary.com/ddgt67wcb/image/upload/v1694186842/project_screenshots/rad_car/radcar_main_page_d6cpoa.png"
-                                        alt="Second slide"
-                                        />
-                                    </Carousel.Item>
-                                    </Carousel>
-                                </Modal.Body>
-                        </Modal>
-                        <div className="tech-icons-container">
-                            <SiReact className="tech-icon" />
-                            <TbBrandDjango className="tech-icon" />
-                            <SiPython className="tech-icon" />
-                            <SiJavascript className="tech-icon" />
-                            <SiDocker className="tech-icon" />
-                        </div>
-                        <p className="project-description">This was a challenging project I took on in the second module of Hack Reactor. Many thanks to my partner Mac Stephens! Together we put together three microservices to handle an auto-dealership's inventory, services and sales. After completing a functional application, I did some experimenting with the user interface and gained some valuable experience incorporating bootstrap and custom css in React.</p>
-                        <div className="project-detail-container">
-                            <p className="project-detail">Repo: <Link className="project-link" to="https://gitlab.com/macstephens/project-beta/-/tree/layout-experiment" target="_blank" rel="noopener noreferrer">GitLab</Link></p>
-                        </div>
-                        <div className="project-detail-container">
-                            <p className="project-detail">Django | React | Python | Javascript | Docker</p>
-                        </div>
-                    </div>
-                    <div className="project-content">
-                    <div className="project-header">
-                        <h5 className="project-description title">Task Manager</h5>
-                        <p className="shaded-text">April, 2023</p>
-                    </div>
-                        <div className="screenshots-container">
-                            <Button onClick={handleShowTaskManager}>
-                                <img className="screenshot" src={"https://res.cloudinary.com/ddgt67wcb/image/upload/v1694186838/project_screenshots/task_manager/my_tasks_f1tqob.png"} alt="main page" width="170"/>
-                            </Button>
-                            <Button onClick={handleShowTaskManager}>
-                                <img className="screenshot" src={"https://res.cloudinary.com/ddgt67wcb/image/upload/v1694186838/project_screenshots/task_manager/project_view_fv3vby.png"} alt="location page" width="170"/>
-                            </Button>
-                        </div>
-                        <Modal show={showTaskManager} onHide={handleCloseTaskManager} size="xl">
-                                <Modal.Header closeButton>
-                                <Modal.Title>Task Manager</Modal.Title>
-                                </Modal.Header>
-                                <Modal.Body >
-                                <Carousel data-bs-theme="dark" indicators={false}>
-                                    <Carousel.Item>
-                                        <img
-                                        className="d-block w-100"
-                                        src="https://res.cloudinary.com/ddgt67wcb/image/upload/v1694186838/project_screenshots/task_manager/my_tasks_f1tqob.png"
-                                        alt="First slide"
-                                        />
-                                    </Carousel.Item>
-                                    <Carousel.Item>
-                                        <img
-                                        className="d-block w-100"
-                                        src="https://res.cloudinary.com/ddgt67wcb/image/upload/v1694186838/project_screenshots/task_manager/project_view_fv3vby.png"
-                                        alt="Second slide"
-                                        />
-                                    </Carousel.Item>
-                                    </Carousel>
-                                </Modal.Body>
-                        </Modal>
-                        <div className="tech-icons-container">
-                            <TbBrandDjango className="tech-icon" />
-                            <SiPython className="tech-icon" />
-                            <SiPlotly className="tech-icon" />
-                        </div>
-                        <p className="project-description">This is the first application I built from scratch using Django. It is a task manager for a contributors to a project to organize and visualize team progress. This was my first try at implementing a 3rd party api (plotly) and data visualization. I built a full stack application from scratch giving a project manager the ability to assign and monitor progress through a clean user interface with Django 4 framework. I inncorporated gantt charts in the user interface to provide visual representation of project tasks, their due dates and progress towards completion by integrating Plotly API.</p>
-                        <div className="project-detail-container">
-                            <p className="project-detail">Repo: <Link className="project-link" to="https://gitlab.com/SlySkillet/project-alpha-apr/-/tree/chart_experiment?ref_type=heads" target="_blank" rel="noopener noreferrer">GitLab</Link></p>
-                        </div>
-                        <div className="project-detail-container">
-                            <p className="project-detail">Django | Python | Plotly API</p>
-                        </div>
-                    </div>
+                    <ProjectCard
+                        projectTitle={"Plunge"}
+                        completedDate={"August, 2023"}
+                        imageUrls={
+                            [
+                                "https://res.cloudinary.com/ddgt67wcb/image/upload/v1694186839/project_screenshots/plunge_screenshots/main-page_revxhz.png",
+                                "https://res.cloudinary.com/ddgt67wcb/image/upload/v1694186841/project_screenshots/plunge_screenshots/location-page_myt9ii.png",
+                                "https://res.cloudinary.com/ddgt67wcb/image/upload/v1694186838/project_screenshots/plunge_screenshots/categories-page_d4shhc.png"
+                            ]
+                        }
+                        imageWidth={"170"}
+                        techIcons={[
+                            <SiFastapi />,
+                            <SiReact />,
+                            <SiPython />,
+                            <SiJavascript  />,
+                            <SiPostgresql  />,
+                            <SiGooglecloud  />,
+                            <SiDocker  />,
+                        ]}
+                        description={"I created this peer-to-peer marketplace application from scratch in a team of four cohort-mates at Hack Reactor. We began with the idea to build a platform housing informal classes for local people to share their knowledge, acquire new skills and foster community. This was my first experience taking a full stack application from seed to deployment. Over 6 weeks we wire-framed our vision for the application, built a development environment with docker, created our backend using Fast API and a SQL database, and created a dynamic user interface with React.js. This was a lesson in iterative development and agile methodology. Working in a team like this was a hands on lesson in Git workflow and general project organization. We used Linear to create and assign tickets and linked it up with Git Lab where we filled our merge requests. I am particularly proud of my work in implementing the Google Maps API and Redux toolkit into this project. The map centers on the authenticated user's address provided in their account information and accessed through the Redux store. Learning to work with global state and Google API were my highest priority learning goals in this project and I'm very happy with our product."}
+                        liveLink={"https://luckythirteen.gitlab.io/plunge/"}
+                        repoLink={"https://github.com/SlySkillet/plunge"}
+                        techStack={`React | FastAPI | Python | Javascript | SQL | GoogleMaps`}
+                    />
+                    < ProjectCard
+                        projectTitle={"RadCar Automobiles"}
+                        completedDate={"June, 2023"}
+                        imageUrls={[
+                            "https://res.cloudinary.com/ddgt67wcb/image/upload/v1694186842/project_screenshots/rad_car/radcar_main_page_d6cpoa.png",
+                            "https://res.cloudinary.com/ddgt67wcb/image/upload/v1694186842/project_screenshots/rad_car/service_history_ppbeum.png"
+                        ]}
+                        imageWidth={"170"}
+                        techIcons={[
+                            <SiReact />,
+                            <TbBrandDjango />,
+                            <SiPython />,
+                            <SiJavascript />,
+                            <SiDocker />
+                        ]}
+                        description={"This was a challenging project I took on in the second module of Hack Reactor. Many thanks to my partner Mac Stephens! Together we put together three microservices to handle an auto-dealership's inventory, services and sales. After completing a functional application, I did some experimenting with the user interface and gained some valuable experience incorporating bootstrap and custom css in React."}
+                        liveLink={null}
+                        repoLink={"https://github.com/SlySkillet/radcar/tree/layout-experiment"}
+                        techStack={`Django | React | Python | Javascript | Docker`}
+                    />
+                    < ProjectCard
+                        projectTitle={"Task Manager"}
+                        completedDate={"April, 2023"}
+                        imageUrls={[
+                            "https://res.cloudinary.com/ddgt67wcb/image/upload/v1694186838/project_screenshots/task_manager/my_tasks_f1tqob.png",
+                            "https://res.cloudinary.com/ddgt67wcb/image/upload/v1694186838/project_screenshots/task_manager/project_view_fv3vby.png"
+                        ]}
+                        imageWidth={"170"}
+                        techIcons={[
+                            <TbBrandDjango />,
+                            <SiPython />,
+                            <SiPlotly />
+                        ]}
+                        description={"This is the first application I built from scratch using Django. It is a task manager for a contributors to a project to organize and visualize team progress. This was my first try at implementing a 3rd party api (plotly) and data visualization. I built a full stack application from scratch giving a project manager the ability to assign and monitor progress through a clean user interface with Django 4 framework. I inncorporated gantt charts in the user interface to provide visual representation of project tasks, their due dates and progress towards completion by integrating Plotly API."}
+                        liveLink={null}
+                        repoLink={"https://github.com/SlySkillet/task-manager/tree/chart_experiment"}
+                        techStack={`Django | Python | Plotly API`}
+                    />
                 </div>
             </div>
         )
-
     }
 }
 
