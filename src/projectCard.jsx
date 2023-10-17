@@ -1,14 +1,5 @@
-import { React, useState, useEffect } from 'react'
+import { React, useState} from 'react'
 import { Link } from 'react-router-dom'
-import { SiFastapi
-        , SiReact
-        , SiPython
-        , SiJavascript
-        , SiPostgresql
-        , SiGooglecloud
-        , SiPlotly
-        , SiDocker } from 'react-icons/si'
-import { TbBrandDjango } from "react-icons/tb";
 import Button from 'react-bootstrap/Button'
 import Modal from 'react-bootstrap/Modal'
 import Carousel from 'react-bootstrap/Carousel';
@@ -17,14 +8,34 @@ function ProjectCard({
     projectTitle,
     completedDate,
     imageUrls,
-    techStack,
+    imageWidth,
+    techIcons,
     description,
     liveLink,
-    repoLink
+    repoLink,
+    techStack
 }) {
-    const [showPlunge, setShowPlunge] = useState(false)
-    const handleClosePlunge = () => setShowPlunge(false)
-    const handleShowPlunge = () => setShowPlunge(true)
+    const [projectModal, setProjectModal] = useState(false)
+
+    const handleCloseProjectModal = () => setProjectModal(false)
+    const handleShowProjectModal = () => setProjectModal(true)
+
+    const projectLinkJSX = (liveLink, repoLink) => {
+        if (liveLink) {
+            return (
+                <p className="project-detail">
+                    Deployed app: <Link className="project-link" to={liveLink} target="_blank" rel="noopener noreferrer"> {projectTitle} </Link> | Repo: <Link className="project-link" to={repoLink} target="_blank" rel="noopener noreferrer"> GitHub </Link>
+                </p>
+            )
+        } else {
+            return (
+                <p className="project-detail">
+                    Repo: <Link className="project-link" to={repoLink} target="_blank" rel="noopener noreferrer"> GitHub </Link>
+                </p>
+            )
+        }
+    }
+
     return(
     <div className="project-content">
         <div className="project-header">
@@ -32,57 +43,43 @@ function ProjectCard({
             <p className="shaded-text">{completedDate}</p>
         </div>
     <div className="screenshots-container">
-        <Button onClick={handleShowPlunge}>
-            <img className="screenshot" src={imageUrls[0]} alt="main page" width="170"/>
-        </Button>
-        <Button onClick={handleShowPlunge}>
-            <img className="screenshot" src={imageUrls[1]} alt="location page" width="170"/>
-        </Button>
-        <Button onClick={handleShowPlunge}>
-            <img className="screenshot" src={imageUrls[2]} alt="categories page" width="170"/>
-        </Button>
+        {imageUrls.map((url) => {
+            return (<Button onClick={handleShowProjectModal} key={url}>
+                <img className="screenshot" src={url} alt="screenshot" width={imageWidth}/>
+            </Button>)
+})}
     </div>
-    <Modal show={showPlunge} onHide={handleClosePlunge} size="xl">
-            <Modal.Header closeButton>
-            <Modal.Title>{projectTitle}</Modal.Title>
-            </Modal.Header>
-            <Modal.Body>
-            <Carousel data-bs-theme="dark" indicators={false}>
-                <Carousel.Item>
-                    <img
-                    className="d-block w-100"
-                    src={imageUrls[0]}
-                    alt="First slide"
-                    />
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                    className="d-block w-100"
-                    src={imageUrls[1]}
-                    alt="Second slide"
-                    />
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                    className="d-block w-100"
-                    src={imageUrls[2]}
-                    alt="Third slide"
-                    />
-                </Carousel.Item>
-                </Carousel>
-            </Modal.Body>
+    <Modal show={projectModal} onHide={handleCloseProjectModal} size="xl">
+        <Modal.Header closeButton>
+        <Modal.Title>{projectTitle}</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+        <Carousel data-bs-theme="dark" indicators={false}>
+            {imageUrls.map((url) => {
+                return (
+                    <Carousel.Item key={url}>
+                        <img
+                            className="d-block w-100"
+                            src={url}
+                            alt="screenshot"
+                        />
+                    </Carousel.Item>
+                )
+            })}
+            </Carousel>
+        </Modal.Body>
     </Modal>
-    {/* <div className="tech-icons-container">
-        {techStack.map((icon) => (
-            <div key={idx} >{icon}</div>
+    <div className="tech-icons-container">
+        {techIcons.map((icon) => (
+            <div className="tech-icon" key={icon} >{icon}</div>
         ))}
-    </div> */}
+    </div>
     <p className="project-description">{description}</p>
     <div className="project-detail-container">
-        <p className="project-detail">Deployed app: <Link className="project-link" to="https://luckythirteen.gitlab.io/plunge/" target="_blank" rel="noopener noreferrer">Plunge</Link> | Repo: <Link className="project-link" to="https://gitlab.com/luckythirteen/plunge" target="_blank" rel="noopener noreferrer">GitLab</Link></p>
+            {projectLinkJSX(liveLink, repoLink)}
     </div>
     <div className="project-detail-container">
-        <p className="project-detail">React | FastAPI | Python | Javascript | SQL | GoogleMaps</p>
+        <p className="project-detail">{techStack}</p>
     </div>
 </div>
 )
