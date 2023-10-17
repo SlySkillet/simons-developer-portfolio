@@ -32,6 +32,26 @@ code {
   grid-row: 3 / 6;
 }
 
+.home-container {
+  display: grid;
+  grid-column: 1 / 4;
+  grid-template-columns: 200px 1fr 200px;
+  grid-template-rows: 90vh 91px 1fr;
+}
+
+.component-container {
+    background-color: rgb(51,51,51);
+    grid-column: 1 / 4;
+    margin: 20px;
+    display: grid;
+    grid-template-rows: 60px 1fr 10px;
+    grid-template-columns: 10px 1fr 1fr 10px;
+    /* margin-top: 100px; */
+    margin-left: 10px;
+    margin-right: 10px;
+    min-width: 760px;
+  }
+
 /* NAVBAR STYLES */
 nav.bg.navbar.navbar.navbar-expand.navbar-light {
   background-color: rgb(51,51,51);
@@ -82,12 +102,7 @@ a.navbar-link.nav-link.active {
   color: rgb(200, 200, 200);
 }
 
-.home-container {
-  display: grid;
-  grid-column: 1 / 4;
-  grid-template-columns: 200px 1fr 200px;
-  grid-template-rows: 90vh 1fr;
-}
+
 
 /* ABOUT STYLES */
 
@@ -98,6 +113,7 @@ a.navbar-link.nav-link.active {
 .about-container{
   display: grid;
   grid-column: 1 / 4;
+  grid-row: 1 / 2;
   justify-self: center;
   grid-template-columns: 15px 30px 1fr 220px 10px;
   background-color: rgb(34,34,34);
@@ -179,9 +195,14 @@ p.sub-text {
 }
 
 /* PROJECT COMPONENT STYLES */
+.projects {
+  grid-row: 2;
+}
+
 .projects-container{
   background-color: rgb(51,51,51);
   grid-column: 1 / 4;
+  grid-row: 3;
   display: grid;
   grid-template-rows: 60px 1fr 10px;
   grid-template-columns: 10px 1fr 1fr 10px;
@@ -417,6 +438,7 @@ p.sub-text
 p.about-content.bio,
 h5.about-content.profession,
 a.nav-link,
+a.navbar-link,
 h5.project-description.title,
 p {
   color: white;

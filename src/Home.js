@@ -5,6 +5,7 @@ function Home (){
     return(
         <div className="home-container">
             <About />
+            <div id="projects" className="divider"></div>
             <Projects />
         </div>
     )
