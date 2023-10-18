@@ -13,6 +13,7 @@ function NavBar(){
                     <Nav className="me-auto">
                         <Nav.Link className="navbar-link" href="/">Home</Nav.Link>
                         <HashLink smooth to="/#projects" className="navbar-link nav-link" >Projects</HashLink>
+                        <HashLink smooth to="/#about2" className="navbar-link nav-link" >About</HashLink>
                         <Nav.Link className="navbar-link" href="/resume">Resume</Nav.Link>
                         {/* <Nav.Link href="#blog">Blog</Nav.Link> */}
                         <Nav.Link className="navbar-link" href="/contact">Contact</Nav.Link>

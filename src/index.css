@@ -42,6 +42,7 @@ code {
   grid-row: 2;
 }
 
+
 .component-container {
     background-color: rgb(51,51,51);
     grid-column: 1 / 4;
@@ -344,6 +345,41 @@ button.btn.btn-primary {
   color: rgb(200, 200, 200)
 }
 
+/* LOWER ABOUT SECTION */
+.about2-container{
+  grid-row: 4;
+  grid-column: 1 / 4;
+  background-color: rgb(253, 230, 195);
+  padding: 150px 0px 150px 0px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background:     repeating-linear-gradient(
+    to right, transparent,
+    transparent 20px,
+    rgb(253,230,195) 20px,
+    rgb(253,230,195) 22px
+  ),
+  repeating-linear-gradient(
+    to bottom, transparent,
+    transparent 20px,
+    rgb(253,230,195) 20px,
+    rgb(253,230,195) 22px
+  ),
+  linear-gradient(45deg, rgb(247, 217, 198), rgb(202, 229, 239));;
+
+}
+
+.about2-container-inner{
+  border: 1px black solid;
+  background-color: rgb(249, 240, 228);
+  max-width: 700px;
+  padding: 10px;
+}
+
+h3.about2-text {
+  margin-left: 5px
+}
 /* RESUME STYLES */
 .resume-container {
   grid-row: 2 / 3;
@@ -455,6 +491,12 @@ h5.project-description.title,
 p {
   color: white;
   font-family: 'Inconsolata', monospace;
+}
+
+.about2-text{
+  color: black;
+  font-family: 'Inconsolata', monospace;
+  font-weight: 550;
 }
 
 .modal-title.h4,
