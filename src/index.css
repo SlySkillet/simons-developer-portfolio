@@ -461,13 +461,22 @@ p.contact-detail {
   grid-column: 1 / 8;
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-items: center;
   gap: 50px;
+  height:60px;
+}
+
+.nav-link.contact{
+  text-decoration: underline;
 }
 
 .footer-link {
   display: flex;
   gap: 10px;
+}
+
+p.thanks {
+  margin: 0px;
 }
 
 
