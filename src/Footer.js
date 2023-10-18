@@ -1,9 +1,14 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+
+
 
 function Footer(){
     return (
         <div className="footer">
-            <p>footer</p>
+            <p>Thanks for visiting!</p>
+            <Link className="nav-link" to="/contact">Contact</Link >
+            <p>Links</p>
         </div>
     )
 }

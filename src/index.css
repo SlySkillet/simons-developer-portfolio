@@ -420,6 +420,10 @@ p.contact-detail {
   background-color: rgb(34,34,34);
   grid-row: 5 / 7;
   grid-column: 1 / 8;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 50px;
 }
 
 
