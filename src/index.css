@@ -38,6 +38,9 @@ code {
   grid-template-columns: 200px 1fr 200px;
   grid-template-rows: 90vh 91px 1fr;
 }
+.divider {
+  grid-row: 2;
+}
 
 .component-container {
     background-color: rgb(51,51,51);
@@ -424,6 +427,11 @@ p.contact-detail {
   justify-content: center;
   align-content: center;
   gap: 50px;
+}
+
+.footer-link {
+  display: flex;
+  gap: 10px;
 }
 
 

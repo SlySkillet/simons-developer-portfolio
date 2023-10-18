@@ -1,6 +1,7 @@
 import About from "./About";
 import Projects from "./Projects";
-import Footer from "./Footer"
+import Footer from "./Footer";
+
 function Home (){
     return(
         <div className="home-container">

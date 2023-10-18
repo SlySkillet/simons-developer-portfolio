@@ -1,14 +1,18 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-
+import { SiLinkedin, SiGithub} from 'react-icons/si'
 
 
 function Footer(){
     return (
         <div className="footer">
             <p>Thanks for visiting!</p>
-            <Link className="nav-link" to="/contact">Contact</Link >
-            <p>Links</p>
+            <Link className="nav-link" to="/contact" >Contact</Link >
+            <div className='footer-link'>
+                <Link className="nav-link" to="/contact"><SiLinkedin /></Link >
+                <Link className="nav-link" to="/contact"><SiGithub /></Link >
+            </div>
+
         </div>
     )
 }
