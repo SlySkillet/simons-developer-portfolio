@@ -16,7 +16,7 @@ function About() {
       <img
         className="portrait"
         alt="simon"
-        src={require("./images/portrait.JPEG")}
+        src={require("../images/portrait.JPEG")}
       />
       <p className="about-content bio">
         I am a creative developer with a background in art and fine dining. My

@@ -1,7 +1,7 @@
-import About from "./About";
-import Projects from "./Projects";
-import Footer from "./Footer";
-import About2 from "./About2";
+import About from "./components/About";
+import Projects from "./components/Projects";
+import Footer from "./components/Footer";
+import About2 from "./components/About2";
 
 function Home() {
   return (
