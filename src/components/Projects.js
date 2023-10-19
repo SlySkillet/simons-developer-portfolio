@@ -1,5 +1,5 @@
 import { React, useState, useEffect } from "react";
-
+import "./projectSpacers.css";
 import Plunge from "./projects/plunge";
 import DevPortfolio from "./projects/devPortfolio";
 import RadCar from "./projects/radCar";
@@ -25,12 +25,16 @@ function Projects() {
       <div className="projects-container">
         <h2 className="project-title">Projects</h2>
         <div className="project-container left">
+          <div className="spacer1"></div>
           <Plunge />
+          <div className="spacer3"></div>
+          <TaskManager />
+          <div className="spacer4"></div>
         </div>
         <div className="project-container right">
           <DevPortfolio />
+          <div className="spacer2"></div>
           <RadCar />
-          <TaskManager />
         </div>
       </div>
     );

@@ -231,11 +231,13 @@ h2.project-title::first-letter {
   grid-column: 2 / 3;
   margin-right: 2.5px;
   justify-content: right;
+  flex-direction: column;
 }
 
 .project-container.right {
   grid-column: 3 / 4;
   margin-left: 2.5px;
+  flex-direction: column;
 }
 
 .project-container.center {
