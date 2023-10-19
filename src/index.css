@@ -91,10 +91,10 @@ nav.bg.navbar.fixed-top.navbar.navbar-expand-lg.navbar-light {
   border-bottom: rgb(82, 82, 82) 1px solid;
 }
 
-a.nav-link {
+a.nav-link.navbar-link {
   font-weight: 600;
 }
-a.nav-link:hover {
+a.nav-link.navbar-link:hover {
   color: aqua;
 }
 
@@ -176,7 +176,7 @@ img.portrait {
   align-self: center;
   justify-self: right;
   /* margin:10px; */
-  height: 385px;
+  height: 400px;
 }
 
 content.bio.two {
@@ -344,10 +344,11 @@ button.btn.btn-primary {
   grid-row: 4;
   grid-column: 1 / 4;
   background-color: rgb(253, 230, 195);
-  padding: 150px 0px 150px 0px;
+  padding: 90px 0px 90px 0px;
   display: flex;
   justify-content: center;
   align-content: center;
+  height: 1fr;
   background: repeating-linear-gradient(
       to right,
       transparent,
@@ -368,7 +369,7 @@ button.btn.btn-primary {
 .about2-container-inner {
   border: 1px black solid;
   background-color: rgb(249, 240, 228);
-  max-width: 700px;
+  max-width: 750px;
   padding: 10px;
 }
 
@@ -464,9 +465,13 @@ p.contact-detail {
 .nav-link.contact {
   text-decoration: underline;
 }
-/* .nav-link:visited{
+.nav-link:visited {
   color: white;
-} */
+}
+
+a.nav-link.contact:hover {
+  color: aqua;
+}
 
 .footer-link {
   display: flex;
@@ -488,6 +493,19 @@ p.sub-text {
   font-family: "Inconsolata", monospace;
 }
 
+h5.about-content.profession {
+  font-size: 22px;
+}
+
+p.about-content.bio,
+a.nav-link,
+a.nav-link:visited,
+a.navbar-link,
+h5.project-description.title,
+p {
+  font-size: 17px;
+}
+
 p.about-content.bio,
 h5.about-content.profession,
 a.nav-link,
@@ -497,7 +515,6 @@ h5.project-description.title,
 p {
   color: white;
   font-family: "Inconsolata", monospace;
-  font-weight: 550;
 }
 
 .about2-text {
