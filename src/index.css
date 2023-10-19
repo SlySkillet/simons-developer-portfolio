@@ -469,6 +469,9 @@ p.contact-detail {
 .nav-link.contact{
   text-decoration: underline;
 }
+/* .nav-link:visited{
+  color: white;
+} */
 
 .footer-link {
   display: flex;
@@ -495,6 +498,7 @@ p.sub-text
 p.about-content.bio,
 h5.about-content.profession,
 a.nav-link,
+a.nav-link:visited,
 a.navbar-link,
 h5.project-description.title,
 p {
