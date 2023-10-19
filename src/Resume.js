@@ -8,7 +8,7 @@ function Resume() {
         <iframe
           className="resume-img"
           title="resume"
-          src={require("./images/simon_conrad_resume_current.pdf")}
+          src={require("./images/resume_current_portfoliosite.pdf")}
         />
       </div>
     </div>

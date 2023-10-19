@@ -344,7 +344,7 @@ button.btn.btn-primary {
   grid-row: 4;
   grid-column: 1 / 4;
   background-color: rgb(253, 230, 195);
-  padding: 90px 0px 90px 0px;
+  padding: 100px 0px 100px 0px;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -503,7 +503,7 @@ a.nav-link:visited,
 a.navbar-link,
 h5.project-description.title,
 p {
-  font-size: 17px;
+  font-size: 16.5px;
 }
 
 p.about-content.bio,
