@@ -14,10 +14,10 @@ function DevPortfolio() {
       </div>
       <p className="project-description">
         I built the site you are viewing now from scratch using React and
-        deployed it with GitHub pages. I really enjoyed putting this together
-        and trying out some new design ideas in the process. This is a work in
-        progress, one I will refactor and expand going forward. See my code at
-        the repo-link below.
+        deployed it with Vercel. I really enjoyed putting this together and
+        trying out some new design ideas in the process. This is a work in
+        progress, one I will continue to iterate and expand. See my code at the
+        repo-link below.
       </p>
       <div className="project-detail-container">
         <p className="project-detail">
