@@ -15,6 +15,7 @@ import ProjectCard from "./projects/projectCard";
 
 import Plunge from "./projects/plunge";
 import DevPortfolio from "./projects/devPortfolio";
+import RadCar from "./projects/radCar";
 
 function Projects() {
   const [windowWidth, setWindowWidth] = useState([window.innerWidth]);
@@ -40,30 +41,7 @@ function Projects() {
         </div>
         <div className="project-container right">
           <DevPortfolio />
-          <ProjectCard
-            projectTitle={"RadCar Automobiles"}
-            completedDate={"June, 2023"}
-            imageUrls={[
-              "https://res.cloudinary.com/ddgt67wcb/image/upload/v1694186842/project_screenshots/rad_car/radcar_main_page_d6cpoa.png",
-              "https://res.cloudinary.com/ddgt67wcb/image/upload/v1694186842/project_screenshots/rad_car/service_history_ppbeum.png",
-            ]}
-            imageWidth={"170"}
-            techIcons={[
-              <SiReact />,
-              <TbBrandDjango />,
-              <SiPython />,
-              <SiJavascript />,
-              <SiDocker />,
-            ]}
-            description={
-              "This was a challenging project I took on in the second module of Hack Reactor. Many thanks to my partner Mac Stephens! Together we put together three microservices to handle an auto-dealership's inventory, services and sales. After completing a functional application, I did some experimenting with the user interface and gained some valuable experience incorporating bootstrap and custom css in React."
-            }
-            liveLink={null}
-            repoLink={
-              "https://github.com/SlySkillet/radcar/tree/layout-experiment"
-            }
-            techStack={`Django | React | Python | Javascript | Docker`}
-          />
+          <RadCar />
           <ProjectCard
             projectTitle={"Task Manager"}
             completedDate={"April, 2023"}
@@ -92,30 +70,7 @@ function Projects() {
         <div className="project-container center">
           <DevPortfolio />
           <Plunge />
-          <ProjectCard
-            projectTitle={"RadCar Automobiles"}
-            completedDate={"June, 2023"}
-            imageUrls={[
-              "https://res.cloudinary.com/ddgt67wcb/image/upload/v1694186842/project_screenshots/rad_car/radcar_main_page_d6cpoa.png",
-              "https://res.cloudinary.com/ddgt67wcb/image/upload/v1694186842/project_screenshots/rad_car/service_history_ppbeum.png",
-            ]}
-            imageWidth={"170"}
-            techIcons={[
-              <SiReact />,
-              <TbBrandDjango />,
-              <SiPython />,
-              <SiJavascript />,
-              <SiDocker />,
-            ]}
-            description={
-              "This was a challenging project I took on in the second module of Hack Reactor. Many thanks to my partner Mac Stephens! Together we put together three microservices to handle an auto-dealership's inventory, services and sales. After completing a functional application, I did some experimenting with the user interface and gained some valuable experience incorporating bootstrap and custom css in React."
-            }
-            liveLink={null}
-            repoLink={
-              "https://github.com/SlySkillet/radcar/tree/layout-experiment"
-            }
-            techStack={`Django | React | Python | Javascript | Docker`}
-          />
+          <RadCar />
           <ProjectCard
             projectTitle={"Task Manager"}
             completedDate={"April, 2023"}
