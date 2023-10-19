@@ -12,7 +12,9 @@ import {
 } from "react-icons/si";
 import { TbBrandDjango } from "react-icons/tb";
 import ProjectCard from "./projects/projectCard";
+
 import Plunge from "./projects/plunge";
+import DevPortfolio from "./projects/devPortfolio";
 
 function Projects() {
   const [windowWidth, setWindowWidth] = useState([window.innerWidth]);
@@ -37,39 +39,7 @@ function Projects() {
           <Plunge />
         </div>
         <div className="project-container right">
-          <div className="project-content">
-            <div className="project-header">
-              <h5 className="project-description title">Developer Portfolio</h5>
-              <p className="shaded-text">September, 2023</p>
-            </div>
-            <div className="tech-icons-container">
-              <SiReact className="tech-icon" />
-              <SiJavascript className="tech-icon" />
-            </div>
-            <p className="project-description">
-              I built the site you are viewing now from scratch using React and
-              deployed it with GitHub pages. I really enjoyed putting this
-              together and trying out some new design ideas in the process. This
-              is a work in progress, one I will refactor and expand going
-              forward. See my code at the repo-link below.
-            </p>
-            <div className="project-detail-container">
-              <p className="project-detail">
-                Repo:{" "}
-                <Link
-                  className="project-link"
-                  to="https://github.com/SlySkillet/simons-developer-portfolio/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  GitHub
-                </Link>
-              </p>
-            </div>
-            <div className="project-detail-container">
-              <p className="project-detail">React | Javascript </p>
-            </div>
-          </div>
+          <DevPortfolio />
           <ProjectCard
             projectTitle={"RadCar Automobiles"}
             completedDate={"June, 2023"}
@@ -120,39 +90,7 @@ function Projects() {
       <div className="projects-container">
         <h2 className="project-title">Projects</h2>
         <div className="project-container center">
-          <div className="project-content">
-            <div className="project-header">
-              <h5 className="project-description title">Developer Portfolio</h5>
-              <p className="shaded-text">September, 2023</p>
-            </div>
-            <div className="tech-icons-container">
-              <SiReact className="tech-icon" />
-              <SiJavascript className="tech-icon" />
-            </div>
-            <p className="project-description">
-              I built the site you are viewing now from scratch using React and
-              deployed it with GitHub pages. I really enjoyed putting this
-              together and trying out some new design ideas in the process. This
-              is a work in progress, one I will refactor and expand going
-              forward. See my code at the repo-link below.{" "}
-            </p>
-            <div className="project-detail-container">
-              <p className="project-detail">
-                Repo:{" "}
-                <Link
-                  className="project-link"
-                  to="https://github.com/SlySkillet/simons-developer-portfolio/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  GitHub
-                </Link>
-              </p>
-            </div>
-            <div className="project-detail-container">
-              <p className="project-detail">React | Javascript </p>
-            </div>
-          </div>
+          <DevPortfolio />
           <Plunge />
           <ProjectCard
             projectTitle={"RadCar Automobiles"}
