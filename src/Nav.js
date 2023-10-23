@@ -25,7 +25,9 @@ function NavBar() {
             <Nav.Link className="navbar-link" href="/resume">
               Resume
             </Nav.Link>
-            {/* <Nav.Link href="#blog">Blog</Nav.Link> */}
+            <Nav.Link className="navbar-link" href="/blog">
+              Blog
+            </Nav.Link>
             <Nav.Link className="navbar-link" href="/contact">
               Contact
             </Nav.Link>

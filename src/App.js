@@ -4,6 +4,7 @@ import NavBar from "./Nav";
 import Resume from "./Resume";
 import Contact from "./Contact";
 import Home from "./Home";
+import Blog from "./Blog";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="resume/" element={<Resume />} />
             <Route path="contact/" element={<Contact />} />
+            <Route path="blog/" element={<Blog />} />
           </Routes>
         </div>
       </BrowserRouter>
