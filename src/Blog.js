@@ -9,6 +9,10 @@ function Blog() {
           come here for your daily dose of the goods
         </p>
       </div>
+      <div className="main-blog">
+        <div className="blog-col1"></div>
+        <div className="blog-col2"></div>
+      </div>
     </div>
   );
 }
