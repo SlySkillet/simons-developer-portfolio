@@ -1,4 +1,30 @@
 .blog-container {
-  background-color: rgb(255, 238, 211);
+  background-color: rgb(255, 244, 211);
   grid-column: 1 / 4;
+  display: grid;
+  grid-template-rows: 100px 1fr;
+  grid-template-columns: 100%;
+}
+
+.blog.header {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-self: end;
+}
+
+.blog.title,
+.blog.subtext {
+  align-self: center;
+  color: rgb(51, 51, 51);
+  grid-row: 1;
+  margin: 0px;
+}
+
+.blog.title {
+  font-size: 24px;
+}
+
+.blog.subtext {
+  font-size: 18px;
 }
