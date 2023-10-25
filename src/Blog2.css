@@ -69,6 +69,14 @@
   left: 50%;
 }
 
+.blog-column.left {
+  margin-top: 0px;
+}
+
+.blog-column.notfirst {
+  margin-top: -100px;
+}
+
 /* circles */
 .blog-column::after {
   content: "";

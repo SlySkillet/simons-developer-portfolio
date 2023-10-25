@@ -25,7 +25,7 @@ function Blog2() {
               </p>
             </div>
           </div>
-          <div className="blog-column right">
+          <div className="blog-column notfirst right">
             <div className="blog-post">
               <h4>header</h4>
               <p>
@@ -39,7 +39,7 @@ function Blog2() {
               </p>
             </div>
           </div>
-          <div className="blog-column left">
+          <div className="blog-column notfirst left">
             <div className="blog-post">
               <h4>header</h4>
               <p>
@@ -53,7 +53,7 @@ function Blog2() {
               </p>
             </div>
           </div>
-          <div className="blog-column right">
+          <div className="blog-column notfirst right">
             <div className="blog-post">
               <h4>header</h4>
               <p>
