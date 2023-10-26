@@ -21,8 +21,8 @@ function Blog2() {
               </div>
             </div>
             <div className="blog-post">
-              <h4>header</h4>
-              <p>
+              <h4 className="post-title">header</h4>
+              <p className="post-content">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -42,8 +42,8 @@ function Blog2() {
               </div>
             </div>
             <div className="blog-post">
-              <h4>header</h4>
-              <p>
+              <h4 className="post-title">header</h4>
+              <p className="post-content">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -67,8 +67,8 @@ function Blog2() {
               </div>
             </div>
             <div className="blog-post">
-              <h4>header</h4>
-              <p>
+              <h4 className="post-title">header</h4>
+              <p className="post-content">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -88,8 +88,8 @@ function Blog2() {
               </div>
             </div>
             <div className="blog-post">
-              <h4>header</h4>
-              <p>
+              <h4 className="post-title">header</h4>
+              <p className="post-content">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
