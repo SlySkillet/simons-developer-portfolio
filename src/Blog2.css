@@ -153,20 +153,48 @@ i.icon {
   width: 50%;
 }
 
-.left::before {
-  content: " ";
-  height: 0;
+.left:before {
   position: absolute;
-  top: 22px;
-  width: 0;
+  top: 25px;
+  right: 63px;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  background-color: rgb(226, 232, 235);
+  border-color: rgb(51, 51, 51);
+  content: "";
+  transform: rotate(45deg);
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  border-width: 1px;
+  border-style: solid;
+  box-sizing: border-box;
+  border-bottom: none;
+  border-left: none;
   z-index: 1;
-  right: 60px;
-  border: medium solid rgb(226, 232, 235);
-  border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent rgb(226, 232, 235);
 }
 
-.right::before {
+.right:after {
+  position: absolute;
+  left: 63px;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  background-color: rgb(226, 232, 235);
+  border-color: rgb(51, 51, 51);
+  top: 25px;
+  content: "";
+  transform: rotate(45deg);
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  border-width: 1px;
+  border-style: solid;
+  box-sizing: border-box;
+  border-top: none;
+  border-right: none;
+  z-index: 1;
+}
+/* .right::before {
   content: " ";
   height: 0;
   position: absolute;
@@ -177,12 +205,13 @@ i.icon {
   border: medium solid rgb(226, 232, 235);
   border-width: 10px 10px 10px 0;
   border-color: transparent rgb(226, 232, 235) transparent transparent;
-}
+} */
 
 .blog-post {
   padding: 20px 30px;
   background-color: rgb(226, 232, 235);
   position: relative;
+  border: 1px solid rgb(51, 51, 51);
 }
 
 .post-title,
