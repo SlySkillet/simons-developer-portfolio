@@ -194,18 +194,6 @@ i.icon {
   border-right: none;
   z-index: 1;
 }
-/* .right::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  left: 60px;
-  border: medium solid rgb(226, 232, 235);
-  border-width: 10px 10px 10px 0;
-  border-color: transparent rgb(226, 232, 235) transparent transparent;
-} */
 
 .blog-post {
   padding: 20px 30px;
@@ -232,21 +220,36 @@ i.icon {
     width: 100%;
     padding-left: 70px;
     padding-right: 25px;
+    margin-bottom: 150px;
   }
 
   /* Make sure that all arrows are pointing leftwards */
   .blog-post-container::before {
-    left: 60px;
+    /* left: 60px;
     border: medium solid rgb(226, 232, 235);
     border-width: 10px 10px 10px 0;
-    border-color: transparent rgb(226, 232, 235) transparent transparent;
+    border-color: transparent rgb(226, 232, 235) transparent transparent; */
+    position: absolute;
+    left: 63px;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    background-color: rgb(226, 232, 235);
+    border-color: rgb(51, 51, 51);
+    top: 25px;
+    content: "";
+    transform: rotate(45deg);
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    border-width: 1px;
+    border-style: solid;
+    box-sizing: border-box;
+    border-top: none;
+    border-right: none;
+    z-index: 1;
   }
 
   /* Make sure all circles are at the same spot */
-  /* .left::after,
-  .right::after {
-    left: 15px;
-  } */
   .timeline-icon,
   .timeline-icon.right-icon {
     left: 30px;
