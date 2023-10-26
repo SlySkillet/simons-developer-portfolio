@@ -1,4 +1,5 @@
 import "./Blog2.css";
+import { FaEarlybirds } from "react-icons/fa";
 
 function Blog2() {
   return (
@@ -12,6 +13,13 @@ function Blog2() {
       <div className="main-blog">
         <div className="timeline">
           <div className="blog-post-container left">
+            <div className="timeline-icon left-icon">
+              <div className="icon-wrapper">
+                <i className="icon">
+                  <FaEarlybirds />
+                </i>
+              </div>
+            </div>
             <div className="blog-post">
               <h4>header</h4>
               <p>
@@ -26,6 +34,13 @@ function Blog2() {
             </div>
           </div>
           <div className="blog-post-container notfirst right">
+            <div className="timeline-icon right-icon">
+              <div className="icon-wrapper">
+                <i className="icon">
+                  <FaEarlybirds />
+                </i>
+              </div>
+            </div>
             <div className="blog-post">
               <h4>header</h4>
               <p>
@@ -44,6 +59,13 @@ function Blog2() {
             </div>
           </div>
           <div className="blog-post-container notfirst left">
+            <div className="timeline-icon left-icon">
+              <div className="icon-wrapper">
+                <i className="icon">
+                  <FaEarlybirds />
+                </i>
+              </div>
+            </div>
             <div className="blog-post">
               <h4>header</h4>
               <p>
@@ -58,6 +80,13 @@ function Blog2() {
             </div>
           </div>
           <div className="blog-post-container notfirst right">
+            <div className="timeline-icon right-icon">
+              <div className="icon-wrapper">
+                <i className="icon">
+                  <FaEarlybirds />
+                </i>
+              </div>
+            </div>
             <div className="blog-post">
               <h4>header</h4>
               <p>
