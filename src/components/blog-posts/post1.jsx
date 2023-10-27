@@ -36,7 +36,7 @@ function Post1() {
           </p>
           <ui className="post-content">
             <li>
-              something to say and a <Link>link</Link>
+              something to say and a <Link className="blog-link">link</Link>
             </li>
             <li>something else</li>
             <li>some other stuff</li>

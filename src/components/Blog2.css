@@ -212,6 +212,10 @@ i.icon {
   font-size: 16.5px;
 }
 
+.blog-link {
+  color: rgb(247, 40, 119);
+}
+
 li {
   margin-left: 15px;
 }
