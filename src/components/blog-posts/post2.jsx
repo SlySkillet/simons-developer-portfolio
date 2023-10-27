@@ -1,25 +1,25 @@
 import "../Blog2.css";
-import { FaEarlybirds } from "react-icons/fa";
+import { FaMapMarkedAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { GiCyberEye } from "react-icons/gi";
+import { GiTreasureMap } from "react-icons/gi";
 
-function Post1() {
+function Post2() {
   return (
-    <div className="blog-post-container left">
-      <div className="timeline-icon left-icon">
-        <div className="icon-wrapper FaEarlybirds">
-          <i className="icon">
-            <FaEarlybirds />
+    <div className="blog-post-container notfirst right">
+      <div className="timeline-icon right-icon">
+        <div className="icon-wrapper FaMapMarkedAlt">
+          <i className="icon FaMapMarkedAlt">
+            <FaMapMarkedAlt />
           </i>
         </div>
       </div>
       <div className="blog-post">
-        <p className="post-date"> Oct 20, 2023</p>
+        <p className="post-date"> Oct 14, 2023</p>
         <h4 className="post-title">
-          Blogging - it shows you give a shit about something
+          Google releases new suite of mapping software
         </h4>
         <div className="inner-post-container">
-          <GiCyberEye className="thumbnail post1" />
+          <GiTreasureMap className="thumbnail post1" />
           <p className="post-content">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -38,16 +38,18 @@ function Post1() {
             <li>
               something to say and a <Link className="blog-link">link</Link>
             </li>
-            <li>something else</li>
+            <li>
+              <Link className="blog-link">Something else to read</Link>
+            </li>
             <li>some other stuff</li>
           </ui>
         </div>
         <div className="post-lower">
-          <p className="tag">#technology</p>
+          <p className="tag">#mapping</p>
         </div>
       </div>
     </div>
   );
 }
 
-export default Post1;
+export default Post2;

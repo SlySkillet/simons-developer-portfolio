@@ -120,7 +120,7 @@
   cursor: default;
   background-color: coral;
   border-radius: 50%;
-  padding-bottom: 5px;
+  /* padding-bottom: 5px; */
 }
 
 i.icon {
@@ -301,4 +301,13 @@ li {
   .right {
     left: 0%;
   }
+}
+
+/* icon positions */
+.icon-wrapper.FaEarlybirds {
+  padding-bottom: 5px;
+}
+
+.icon-wrapper.FaMapMarkedAlt {
+  padding-bottom: 10px;
 }
