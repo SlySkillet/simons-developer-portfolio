@@ -4,7 +4,7 @@ import NavBar from "./Nav";
 import Resume from "./Resume";
 import Contact from "./Contact";
 import Home from "./Home";
-import Blog2 from "./Blog2";
+import Blog2 from "./components/Blog2";
 
 function App() {
   return (
