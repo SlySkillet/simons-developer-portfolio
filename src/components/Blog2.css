@@ -178,18 +178,51 @@ i.icon {
   z-index: 1;
 }
 
+/* post content styles */
+
 .blog-post {
-  padding: 20px 30px;
+  padding: 10px 30px;
   background-color: rgb(226, 232, 235);
   position: relative;
   border: 1px solid rgb(51, 51, 51);
+}
+
+.post-date {
+  display: flex;
+  justify-content: right;
+  margin: 0px;
+  font-style: italic;
+  color: rgb(71, 71, 71);
 }
 
 .post-title,
 .post-content {
   font-family: "Inconsolata", monospace;
   color: rgb(51, 51, 51);
+}
+
+.post-title {
+  line-height: 25px;
+}
+
+.post-content {
   line-height: 20px;
+  font-size: 16.5px;
+}
+
+li {
+  margin-left: 15px;
+}
+
+.inner-post-container {
+  display: inline-block;
+  /* flex-wrap: wrap;
+  flex-direction: column; */
+  /* grid-template-columns: 50% 50%; */
+}
+.thumbnail.post1 {
+  font-size: 150px;
+  float: right;
 }
 
 /* Media queries - Responsive timeline on screens less than 850px wide */
