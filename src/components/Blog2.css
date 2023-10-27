@@ -1,4 +1,10 @@
 .blog-container {
+  /* background-image: linear-gradient(
+    to right,
+    rgb(51, 51, 51),
+    rgb(252, 242, 229),
+    rgb(51, 51, 51)
+  ); */
   background-color: rgb(252, 242, 229);
   grid-column: 1 / 4;
   display: grid;
