@@ -1,11 +1,12 @@
 import "./Blog2.css";
 import { FaEarlybirds } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 function Blog2() {
   return (
     <div className="blog-container">
       <div className="blog header">
-        <p className="blog title">:: Blog ::</p>
+        <p className="blog title"> Blog </p>
         <p className="blog subtext">
           come here for your daily dose of the goods
         </p>
@@ -31,6 +32,13 @@ function Blog2() {
                 nulla pariatur. Excepteur sint occaecat cupidatat non proident,
                 sunt in culpa qui officia deserunt mollit anim id est laborum.
               </p>
+              <ui className="post-content">
+                <li>
+                  something to say and a <Link>link</Link>
+                </li>
+                <li>something else</li>
+                <li>some other stuff</li>
+              </ui>
             </div>
           </div>
           <div className="blog-post-container notfirst right">
@@ -56,6 +64,13 @@ function Blog2() {
                 nulla pariatur. Excepteur sint occaecat cupidatat non proident,
                 sunt in culpa qui officia deserunt mollit anim id est laborum.
               </p>
+              <ui className="post-content">
+                <li>
+                  something to say and a <Link>link</Link>
+                </li>
+                <li>something else</li>
+                <li>some other stuff</li>
+              </ui>
             </div>
           </div>
           <div className="blog-post-container notfirst left">
@@ -77,9 +92,16 @@ function Blog2() {
                 nulla pariatur. Excepteur sint occaecat cupidatat non proident,
                 sunt in culpa qui officia deserunt mollit anim id est laborum.
               </p>
+              <ui className="post-content">
+                <li>
+                  something to say and a <Link>link</Link>
+                </li>
+                <li>something else</li>
+                <li>some other stuff</li>
+              </ui>
             </div>
           </div>
-          <div className="blog-post-container notfirst right">
+          <div className="blog-post-container notfirst right last">
             <div className="timeline-icon right-icon">
               <div className="icon-wrapper">
                 <i className="icon">
@@ -98,6 +120,13 @@ function Blog2() {
                 nulla pariatur. Excepteur sint occaecat cupidatat non proident,
                 sunt in culpa qui officia deserunt mollit anim id est laborum.
               </p>
+              <ui className="post-content">
+                <li>
+                  something to say and a <Link>link</Link>
+                </li>
+                <li>something else</li>
+                <li>some other stuff</li>
+              </ui>
             </div>
           </div>
         </div>

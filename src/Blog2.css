@@ -2,7 +2,7 @@
   background-color: #ccc;
   grid-column: 1 / 4;
   display: grid;
-  grid-template-rows: 100px 1fr;
+  grid-template-rows: 130px 1fr;
   grid-template-columns: 100%;
 }
 
@@ -13,6 +13,13 @@
   align-self: end;
 }
 
+.blog.title {
+  font-family: "ultra", serif;
+  font-size: 70px;
+  text-decoration: underline;
+  text-underline-position: auto;
+}
+
 .blog.title,
 .blog.subtext {
   align-self: center;
@@ -21,9 +28,9 @@
   margin: 0px;
 }
 
-.blog.title {
+/* .blog.title {
   font-size: 24px;
-}
+} */
 
 .blog.subtext {
   font-size: 18px;
@@ -182,6 +189,7 @@ i.icon {
 .post-content {
   font-family: "Inconsolata", monospace;
   color: rgb(51, 51, 51);
+  line-height: 20px;
 }
 
 /* Media queries - Responsive timeline on screens less than 850px wide */
@@ -197,6 +205,10 @@ i.icon {
     padding-left: 70px;
     padding-right: 25px;
     margin-bottom: 150px;
+  }
+
+  .blog-post-container.last {
+    margin-bottom: 5px;
   }
 
   /* Make sure that all arrows are pointing leftwards */
