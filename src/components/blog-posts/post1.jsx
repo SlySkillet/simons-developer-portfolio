@@ -42,6 +42,9 @@ function Post1() {
             <li>some other stuff</li>
           </ui>
         </div>
+        <div className="post-lower">
+          <p className="tag">#technology</p>
+        </div>
       </div>
     </div>
   );

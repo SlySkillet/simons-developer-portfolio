@@ -181,7 +181,7 @@ i.icon {
 /* post content styles */
 
 .blog-post {
-  padding: 10px 30px;
+  /* padding: 10px 30px; */
   background-color: rgb(226, 232, 235);
   position: relative;
   border: 1px solid rgb(51, 51, 51);
@@ -223,6 +223,26 @@ li {
 .thumbnail.post1 {
   font-size: 150px;
   float: right;
+}
+
+.post-lower {
+  background-color: rgb(122, 130, 151);
+  border-top: 1px solid rgb(51, 51, 51);
+  padding: 0px 10px;
+  margin: 10px 0px 0px 0px;
+}
+.tag {
+  margin: 0px;
+  font-style: italic;
+  color: rgb(51, 51, 51);
+}
+
+.post-title,
+.post-date {
+  margin: 5px 30px;
+}
+.inner-post-container {
+  margin: 0px 30px;
 }
 
 /* Media queries - Responsive timeline on screens less than 850px wide */
