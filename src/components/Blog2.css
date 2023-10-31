@@ -1,5 +1,12 @@
 .blog-container {
-  background-color: rgb(245, 231, 212);
+  /* background-image: linear-gradient(
+    to right,
+    rgb(51, 51, 51),
+    rgb(252, 242, 229),
+    rgb(252, 242, 229),
+    rgb(51, 51, 51)
+  ); */
+  background-color: rgb(252, 242, 229);
   grid-column: 1 / 4;
   display: grid;
   grid-template-rows: 130px 1fr;
@@ -45,16 +52,17 @@
 .timeline {
   position: relative;
   margin: 0 auto;
-  /* background-color: rgb(223, 178, 111); */
-  background-color: rgb(143, 151, 165);
+  /* background-color: rgb(82, 93, 103); */
+  background-color: rgb(105, 112, 118);
   margin: 5px;
+  padding: 40px 0px;
 }
 
 .timeline::after {
   content: "";
   position: absolute;
   width: 6px;
-  background-color: rgb(245, 231, 212);
+  background-color: rgb(252, 242, 229);
   top: 0;
   bottom: 0;
   left: 50%;
@@ -83,7 +91,7 @@
 }
 
 .blog-post-container.notfirst {
-  margin-top: -100px;
+  margin-top: -150px;
 }
 
 /* circles */
@@ -94,7 +102,7 @@
   width: 40px;
   height: 40px;
   margin-left: -20px;
-  border: 4px solid rgb(245, 231, 212);
+  border: 4px solid rgb(252, 242, 229);
   border-radius: 50%;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
   text-align: center;
@@ -120,11 +128,11 @@
   cursor: default;
   background-color: coral;
   border-radius: 50%;
-  padding-bottom: 5px;
+  /* padding-bottom: 5px; */
 }
 
 i.icon {
-  color: rgb(71, 71, 71);
+  color: rgb(48, 48, 48);
   font-size: 24px;
 }
 
@@ -143,7 +151,8 @@ i.icon {
   right: 63px;
   border-top-width: 1px;
   border-right-width: 1px;
-  background-color: rgb(251, 250, 239);
+  /* background-color: rgb(226, 232, 235); */
+  background-color: rgb(254, 241, 225);
   border-color: rgb(51, 51, 51);
   content: "";
   transform: rotate(45deg);
@@ -163,7 +172,7 @@ i.icon {
   left: 63px;
   border-top-width: 1px;
   border-right-width: 1px;
-  background-color: rgb(248, 237, 221);
+  background-color: rgb(254, 241, 225);
   border-color: rgb(51, 51, 51);
   top: 25px;
   content: "";
@@ -182,8 +191,7 @@ i.icon {
 /* post content styles */
 
 .blog-post {
-  /* padding: 10px 30px; */
-  background-color: rgb(251, 250, 239);
+  background-color: rgb(254, 241, 225);
   position: relative;
   border: 1px solid rgb(51, 51, 51);
 }
@@ -207,8 +215,12 @@ i.icon {
 }
 
 .post-content {
-  line-height: 20px;
+  line-height: 18px;
   font-size: 16.5px;
+}
+
+.blog-link {
+  color: rgb(247, 40, 119);
 }
 
 li {
@@ -217,9 +229,6 @@ li {
 
 .inner-post-container {
   display: inline-block;
-  /* flex-wrap: wrap;
-  flex-direction: column; */
-  /* grid-template-columns: 50% 50%; */
 }
 .thumbnail.post1 {
   font-size: 150px;
@@ -227,7 +236,7 @@ li {
 }
 
 .post-lower {
-  background-color: rgb(246, 182, 86);
+  background-color: rgb(84, 102, 120);
   border-top: 1px solid rgb(51, 51, 51);
   padding: 0px 10px;
   margin: 10px 0px 0px 0px;
@@ -235,13 +244,16 @@ li {
 .tag {
   margin: 0px;
   font-style: italic;
-  color: rgb(51, 51, 51);
+  color: rgb(211, 211, 211);
 }
 
-.post-title,
+.post-title {
+  margin: 10px 30px;
+}
 .post-date {
   margin: 5px 30px;
 }
+
 .inner-post-container {
   margin: 0px 30px;
 }
@@ -297,4 +309,13 @@ li {
   .right {
     left: 0%;
   }
+}
+
+/* icon positions */
+.icon-wrapper.SiHiveBlockchain {
+  padding-bottom: 6px;
+}
+
+.icon-wrapper.FaMapMarkedAlt {
+  padding-bottom: 10px;
 }
