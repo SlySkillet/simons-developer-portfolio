@@ -1,7 +1,6 @@
 import "../Blog2.css";
-import { FaEarlybirds } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { GiCyberEye, GiStoneBlock } from "react-icons/gi";
+import { GiKiwiBird } from "react-icons/gi";
 import { SiHiveBlockchain } from "react-icons/si";
 
 function Post1() {
@@ -21,7 +20,7 @@ function Post1() {
           carbon industry
         </h4>
         <div className="inner-post-container">
-          <GiStoneBlock className="thumbnail post1" />
+          <GiKiwiBird className="thumbnail post1" />
           <p className="post-content">
             Blockchain technology offers promising solutions to the challenges
             faced by the voluntary carbon market (VCM). The VCM lacks trust and
@@ -67,7 +66,7 @@ function Post1() {
           </ui>
         </div>
         <div className="post-lower">
-          <p className="tag">#technology</p>
+          <p className="tag"># blockchain</p>
         </div>
       </div>
     </div>

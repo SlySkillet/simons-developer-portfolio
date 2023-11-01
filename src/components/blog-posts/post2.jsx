@@ -81,7 +81,7 @@ function Post2() {
           </ui>
         </div>
         <div className="post-lower">
-          <p className="tag">#mapping</p>
+          <p className="tag"># mapping</p>
         </div>
       </div>
     </div>

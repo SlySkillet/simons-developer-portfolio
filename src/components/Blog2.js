@@ -3,6 +3,7 @@ import { FaEarlybirds } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import Post1 from "./blog-posts/post1";
 import Post2 from "./blog-posts/post2";
+import Post3 from "./blog-posts/post3";
 
 function Blog2() {
   return (
@@ -17,7 +18,8 @@ function Blog2() {
         <div className="timeline">
           <Post1 />
           <Post2 />
-          <div className="blog-post-container notfirst left">
+          <Post3 />
+          {/* <div className="blog-post-container notfirst left">
             <div className="timeline-icon left-icon">
               <div className="icon-wrapper">
                 <i className="icon">
@@ -51,7 +53,7 @@ function Blog2() {
                 <li>some other stuff</li>
               </ui>
             </div>
-          </div>
+          </div> */}
           <div className="blog-post-container notfirst right last">
             <div className="timeline-icon right-icon">
               <div className="icon-wrapper">
