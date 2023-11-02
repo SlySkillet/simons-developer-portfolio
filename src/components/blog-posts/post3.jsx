@@ -1,6 +1,6 @@
 import "../Blog2.css";
 import { Link } from "react-router-dom";
-import { GiBrain } from "react-icons/gi";
+import { GiBrain, GiSpy } from "react-icons/gi";
 import { SiHiveBlockchain } from "react-icons/si";
 
 function Post3() {
@@ -17,22 +17,26 @@ function Post3() {
         <p className="post-date"> Oct 20, 2023</p>
         <h4 className="post-title">UK on AI threats</h4>
         <div className="inner-post-container">
-          <SiHiveBlockchain className="thumbnail post1" />
+          <GiSpy className="thumbnail post3" />
           <p className="post-content">
-            This document provides an overview of what threats of AI are going
-            forward. Much talk of the threat posed by an 'AI future' doesn't go
-            much deaper than stating that smart people are afraid of this
-            technology. What we are looking at is potential for widely
-            proliferated misinformation and potential for manipulation by bad
-            actors.
+            There is no shortage of discourse on AI and the fear around what the
+            new technology means for our future as a species. At this point,
+            threat and benefit are both speculative. A future where we are
+            slaves to autonomous machine overlords remains the realm of science
+            fiction (though maybe we’re getting closer…). A very real and
+            plausible threat is in the propagation of misinformation across the
+            internet or in focused and deliberate attacks. Foreign meddling in
+            US elections, to use a recent example, could be achieved with
+            greater efficiency and to greater effect with the automation of
+            content creation.
           </p>
-          <ui className="post-content">
+          {/* <ui className="post-content">
             <li>
               something to say and a <Link className="blog-link">link</Link>
             </li>
             <li>something else</li>
             <li>some other stuff</li>
-          </ui>
+          </ui> */}
         </div>
         <div className="post-lower">
           <p className="tag"># technology, AI</p>

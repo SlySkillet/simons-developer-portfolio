@@ -27,24 +27,21 @@ function Post4() {
             className="thumbnail post4"
           />
           <p className="post-content">
-            I'm creating this blog to shed share my research in the tech
-            industries as I continue to grow my understanding of the state of
-            the industry today and the future of technology we are building. As
-            a junior engineer, I am doing extensive research and constantly
-            learning while expanding my skills and portfolio. I have found that
-            a lot of the discussion around software engineering focuses on the
-            challenges of finding a job over the actual subject of technology
-            and human potential. I intend for this blog to be a source of
-            information on the latter. I hope this inspires other junior
-            engineers to discover and build more.
+            I'm creating this blog to share my technical research as I continue
+            to grow my understanding of computer programming, the state of the
+            industry today and the future we are building. As a job seeker and
+            student of code, I am doing extensive research and constantly
+            learning while expanding my skills and portfolio. I find the
+            discussion of software engineering is entrenched in circular banter
+            about how profoundly difficult it is to enter the industry over the
+            subject of technology itself. I intend for this blog to be a
+            document of my journey and a source of information on interesting
+            advances in the evolving technical landscape. I hope this inspires
+            my colleagues to discover, experiment, and build more.
           </p>
           <p className="post-content">
-            With large language models out on the market, is writing finished?
-            Writing remains the way to develop ideas and view our thinking in
-            plane language. Formulating thoughts for presentation is critical in
-            the development of goals, plans and theories. My intent is to share
-            my process and my brand. Please stay tuned for mildly interesting
-            content and mostly functional projects. Cheers 🍻
+            I hope you enjoy your visit to my site. Please stay tuned for mildly
+            interesting content. Cheers.
           </p>
         </div>
         <div className="post-lower">

@@ -230,14 +230,22 @@ li {
 .inner-post-container {
   display: inline-block;
 }
+.thumbnail {
+  margin-left: 3px;
+}
 .thumbnail.post1 {
   font-size: 150px;
   float: right;
 }
-
+.thumbnail.post3 {
+  color: rgb(88, 116, 118);
+  float: right;
+  font-size: 150px;
+  filter: drop-shadow(-3px 3px 0px black);
+}
 .thumbnail.post4 {
   float: right;
-  height: 350px;
+  height: 280px;
 }
 
 .post-lower {
