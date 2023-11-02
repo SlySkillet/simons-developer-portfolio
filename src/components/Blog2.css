@@ -235,6 +235,11 @@ li {
   float: right;
 }
 
+.thumbnail.post4 {
+  float: right;
+  height: 350px;
+}
+
 .post-lower {
   background-color: rgb(84, 102, 120);
   border-top: 1px solid rgb(51, 51, 51);
@@ -320,6 +325,7 @@ li {
   padding-bottom: 10px;
 }
 
-.icon-wrapper.GiBrain {
+.icon-wrapper.GiBrain,
+.icon-wrapper.GrKeyboard {
   padding-bottom: 5px;
 }
