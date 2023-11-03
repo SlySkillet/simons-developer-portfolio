@@ -5,8 +5,8 @@ import { SiGoogleearth } from "react-icons/si";
 
 function Post2() {
   return (
-    <div className="blog-post-container notfirst right">
-      <div className="timeline-icon right-icon">
+    <div className="blog-post-container notfirst left">
+      <div className="timeline-icon left-icon">
         <div className="icon-wrapper FaMapMarkedAlt">
           <i className="icon FaMapMarkedAlt">
             <FaMapMarkedAlt />
