@@ -25,6 +25,8 @@ function Post3() {
             <Link
               className="blog-link"
               to="https://www.gov.uk/government/publications/ai-safety-summit-2023-the-bletchley-declaration/the-bletchley-declaration-by-countries-attending-the-ai-safety-summit-1-2-november-2023"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Bletchley Declaration
             </Link>{" "}
@@ -44,6 +46,8 @@ function Post3() {
             <Link
               className="blog-link"
               to="https://assets.publishing.service.gov.uk/media/65395abae6c968000daa9b25/frontier-ai-capabilities-risks-report.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               report
             </Link>{" "}
@@ -60,6 +64,8 @@ function Post3() {
             <Link
               className="blog-link"
               to="https://www.nytimes.com/2023/11/01/world/europe/uk-ai-summit-sunak.html"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               regulating and safely developing AI
             </Link>
@@ -70,6 +76,8 @@ function Post3() {
               <Link
                 className="blog-link"
                 to="https://www.gov.uk/government/publications/ai-safety-summit-2023-the-bletchley-declaration/the-bletchley-declaration-by-countries-attending-the-ai-safety-summit-1-2-november-2023"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 The Bletchley Declaration
               </Link>
@@ -78,6 +86,8 @@ function Post3() {
               <Link
                 className="blog-link"
                 to="https://assets.publishing.service.gov.uk/media/65395abae6c968000daa9b25/frontier-ai-capabilities-risks-report.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 UK Frontier AI Report
               </Link>
