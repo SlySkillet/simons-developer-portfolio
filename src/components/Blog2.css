@@ -223,7 +223,8 @@ i.icon {
 }
 
 .blog-link {
-  color: rgb(247, 40, 119);
+  /* color: rgb(247, 40, 119); */
+  color: rgb(54, 76, 219);
 }
 
 li {
