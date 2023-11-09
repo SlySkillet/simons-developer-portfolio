@@ -16,8 +16,7 @@ function Post1() {
       <div className="blog-post">
         <p className="post-date"> Nov 9, 2023</p>
         <h4 className="post-title">
-          Research and design underway for expansion of Ethereum's blockchain to
-          the carbon industry
+          Blockchain technology for the carbon crediting
         </h4>
         <div className="inner-post-container">
           <GiKiwiBird className="thumbnail post1" />
@@ -51,7 +50,7 @@ function Post1() {
               rel="noopener noreferrer"
             >
               double-counting
-            </Link>{" "}
+            </Link>
             , an error where one credit is used to offset multiple instances of
             polluting practice and thus negating its effect. It would
             effectively be a data driven version of digital art NFTs
