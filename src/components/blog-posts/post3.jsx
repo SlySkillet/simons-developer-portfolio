@@ -4,7 +4,7 @@ import { GiBrain, GiSummits } from "react-icons/gi";
 
 function Post3() {
   return (
-    <div className="blog-post-container right">
+    <div className="blog-post-container right notfirst">
       <div className="timeline-icon right-icon">
         <div className="icon-wrapper GiBrain">
           <i className="icon">

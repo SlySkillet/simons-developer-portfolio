@@ -14,55 +14,102 @@ function Post1() {
         </div>
       </div>
       <div className="blog-post">
-        <p className="post-date"> Oct 20, 2023</p>
+        <p className="post-date"> Nov 9, 2023</p>
         <h4 className="post-title">
-          Blockchain beyond cryptocurrency: decentralized climate data for the
-          carbon industry
+          Research and design underway for expansion of Ethereum's blockchain to
+          the carbon industry
         </h4>
         <div className="inner-post-container">
           <GiKiwiBird className="thumbnail post1" />
           <p className="post-content">
-            Blockchain technology offers promising solutions to the challenges
-            faced by the voluntary carbon market (VCM). The VCM lacks trust and
-            transparency, with a multitude of certifying options causing
-            skepticism about carbon credit quality. Blockchain can address these
-            issues by providing a secure, decentralized ledger that ensures
-            transparency and trust. Blockchain's smart contracts enable the
-            creation of tradable units for carbon credits, streamlining
-            transactions and reducing costs. It also supports asset
-            tokenization, making it easy to access and trade carbon credits.
-            This approach attracts investors seeking innovative solutions for
-            carbon markets. Additionally, blockchain can create a meta-registry,
-            aggregating data for greater transparency, preventing
-            double-counting, and improving identity verification. Open-source
-            blockchains facilitate tracking climate projects globally.
+            There is growing interest in the carbon industry around the use of
+            tokenized credits, minted and stored on the blockchain. Carbon
+            credits give polluting companies a chance to claim net zero
+            emissions by funding projects that sequester carbon dioxide from the
+            atmosphere. Proponents of the system believe creating a
+            decentralized process of accreditation could promote scientific
+            rigor in the evaluation of carbon crediting by creating a{" "}
+            <Link
+              className="blog-link"
+              to="https://www.businessinsider.com/startups-blockchain-carbon-credits-topl-toucan-verra-gold-standard-2023-4?op=1
+              "
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              transparent system
+            </Link>{" "}
+            to create a token through validation by multiple sources including
+            companies, nonprofits and local scientists.
           </p>
           <p className="post-content">
-            However, it's crucial to acknowledge blockchain's limitations, as it
-            cannot inherently distinguish between good and bad data. It empowers
-            users to verify data but doesn't assess data quality. To scale a
-            high-quality voluntary carbon market, blockchain should focus on
-            differentiating carbon credits and providing transparent
-            information. While the buzz around blockchain's potential may seem
-            exaggerated, ongoing initiatives show promise in addressing carbon
-            market challenges. The key lies in establishing consensus on
-            standards and systems to enhance the overall integrity of the chain.
-            This is especially crucial as carbon credits evolve into diverse
-            formats.{" "}
+            Creating a unique minted token for a credit attaches it to a
+            securely encrypted code, potentially guarding against{" "}
+            <Link
+              className="blog-link"
+              to="https://rmi.org/what-can-blockchain-do-for-carbon-markets/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              double-counting
+            </Link>{" "}
+            , an error where one credit is used to offset multiple instances of
+            polluting practice and thus negating its effect. It would
+            effectively be a data driven version of digital art NFTs
+            (non-fungible tokens) which minted a unique piece of digital art. In
+            this case, an encrypted code would be tied to a dataset documenting
+            and monitoring the performance of one or many projects.
           </p>
           <p className="post-content">
-            The Carbon Markets Initiative is actively exploring blockchain use
-            cases to enhance trust in on-chain carbon credits and invites
-            collaboration in this endeavor. Blockchain has the potential to
-            revolutionize the VCM, provided it can address quality, diversity,
-            and transparency effectively.
+            Energy conscious companies are looking to the Ethereum Blockchain to
+            develop a decentralized carbon marketplace. Ethereum claims to have{" "}
+            <Link
+              className="blog-link"
+              to="https://ethereum.org/en/energy-consumption/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              drastically reduced the energy consumption of their blockchain
+            </Link>
+            .
+          </p>
+          <p className="post-content">
+            The bottom line issue to address in carbon crediting is quality.
+            On-chain crediting is not, in itself, a solution but rather a
+            potential platform for greater transparency and sound validation.
           </p>
           <ui className="post-content">
             <li>
-              something to say and a <Link className="blog-link">link</Link>
+              <Link
+                className="blog-link"
+                to="https://www.businessinsider.com/startups-blockchain-carbon-credits-topl-toucan-verra-gold-standard-2023-4?op=1
+              "
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Business Insider - blockchain technology
+              </Link>
             </li>
-            <li>something else</li>
-            <li>some other stuff</li>
+            <li>
+              <Link
+                className="blog-link"
+                to="https://rmi.org/what-can-blockchain-do-for-carbon-markets/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                RMI - Beyond the Buzz: What Can Blockchain Do for Carbon
+                Markets?
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="blog-link"
+                to="https://ethereum.org/en/energy-consumption/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Ethereum blockchain energy consumption
+              </Link>
+            </li>
           </ui>
         </div>
         <div className="post-lower">

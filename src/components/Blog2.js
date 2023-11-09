@@ -1,5 +1,5 @@
 import "./Blog2.css";
-// import Post1 from "./blog-posts/post1";
+import Post1 from "./blog-posts/post1";
 import Post2 from "./blog-posts/post2";
 import Post3 from "./blog-posts/post3";
 import Post4 from "./blog-posts/post4";
@@ -15,7 +15,7 @@ function Blog2() {
       </div>
       <div className="main-blog">
         <div className="timeline">
-          {/* <Post1 /> */}
+          <Post1 />
           <Post3 />
           <Post2 />
           <Post4 />
