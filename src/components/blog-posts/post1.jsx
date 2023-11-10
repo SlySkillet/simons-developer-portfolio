@@ -14,20 +14,19 @@ function Post1() {
         </div>
       </div>
       <div className="blog-post">
-        <p className="post-date"> Nov 9, 2023</p>
+        <p className="post-date"> Nov 10, 2023</p>
         <h4 className="post-title">
           Blockchain technology for the carbon crediting
         </h4>
         <div className="inner-post-container">
           <GiKiwiBird className="thumbnail post1" />
           <p className="post-content">
-            There is growing interest in the carbon industry around the use of
-            tokenized credits, minted and stored on the blockchain. Carbon
-            credits give polluting companies a chance to claim net zero
-            emissions by funding projects that sequester carbon dioxide from the
-            atmosphere. Proponents of the system believe creating a
-            decentralized process of accreditation could promote scientific
-            rigor in the evaluation of carbon crediting by creating a{" "}
+            Carbon credits are a way for companies to fund environmental
+            projects to offset their polluting practices, allowing them to claim
+            net zero emissions. The methodology for quantifying carbon
+            sequestration varies by project and meaningful environmental
+            improvements are often questionable. Startups are looking to
+            blockchain technology to create a more accurate and{" "}
             <Link
               className="blog-link"
               to="https://www.businessinsider.com/startups-blockchain-carbon-credits-topl-toucan-verra-gold-standard-2023-4?op=1
@@ -37,12 +36,10 @@ function Post1() {
             >
               transparent system
             </Link>{" "}
-            to create a token through validation by multiple sources including
-            companies, nonprofits and local scientists.
-          </p>
-          <p className="post-content">
-            Creating a unique minted token for a credit attaches it to a
-            securely encrypted code, potentially guarding against{" "}
+            of issuing and trading credits. Proponents believe applying the
+            cryptocurrency framework to carbon credits would facilitate
+            evaluation by multiple parties, create incentives for studies, and
+            establish specific criteria. Additionally,{" "}
             <Link
               className="blog-link"
               to="https://rmi.org/what-can-blockchain-do-for-carbon-markets/"
@@ -51,12 +48,9 @@ function Post1() {
             >
               double-counting
             </Link>
-            , an error where one credit is used to offset multiple instances of
-            polluting practice and thus negating its effect. It would
-            effectively be a data driven version of digital art NFTs
-            (non-fungible tokens) which minted a unique piece of digital art. In
-            this case, an encrypted code would be tied to a dataset documenting
-            and monitoring the performance of one or many projects.
+            , an error where one credit is sold to offset the emissions of
+            multiple companies, could be prevented by establishing a system of
+            encrypted tokens.
           </p>
           <p className="post-content">
             Energy conscious companies are looking to the Ethereum Blockchain to
@@ -74,7 +68,8 @@ function Post1() {
           <p className="post-content">
             The bottom line issue to address in carbon crediting is quality.
             On-chain crediting is not, in itself, a solution but rather a
-            potential platform for greater transparency and sound validation.
+            platform for greater transparency, collaboration, and sound
+            validation.
           </p>
           <ui className="post-content">
             <li>
