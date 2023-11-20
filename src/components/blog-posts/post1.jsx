@@ -5,7 +5,7 @@ import { SiHiveBlockchain } from "react-icons/si";
 
 function Post1() {
   return (
-    <div className="blog-post-container left">
+    <div className="blog-post-container left notfirst">
       <div className="timeline-icon left-icon">
         <div className="icon-wrapper SiHiveBlockchain">
           <i className="icon">

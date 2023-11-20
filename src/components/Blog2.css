@@ -252,6 +252,13 @@ li {
   height: 220px;
 }
 
+.thumbnail.post5 {
+  color: black;
+  float: right;
+  font-size: 150px;
+  filter: drop-shadow(-3px 3px 0px rgb(174, 62, 62));
+}
+
 .post-lower {
   /* background-color: rgb(84, 102, 120); */
   background-color: rgb(221, 204, 185);

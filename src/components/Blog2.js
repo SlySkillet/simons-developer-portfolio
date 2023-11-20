@@ -3,6 +3,7 @@ import Post1 from "./blog-posts/post1";
 import Post2 from "./blog-posts/post2";
 import Post3 from "./blog-posts/post3";
 import Post4 from "./blog-posts/post4";
+import Post5 from "./blog-posts/post5";
 
 function Blog2() {
   return (
@@ -15,6 +16,7 @@ function Blog2() {
       </div>
       <div className="main-blog">
         <div className="timeline">
+          <Post5 />
           <Post1 />
           <Post3 />
           <Post2 />
