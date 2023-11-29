@@ -4,7 +4,7 @@ import { GiBrain, GiAxeInStump } from "react-icons/gi";
 
 function Post5() {
   return (
-    <div className="blog-post-container right">
+    <div className="blog-post-container notfirst right">
       <div className="timeline-icon right-icon">
         <div className="icon-wrapper GiBrain">
           <i className="icon">
