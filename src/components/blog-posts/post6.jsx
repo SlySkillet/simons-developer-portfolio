@@ -5,7 +5,7 @@ import { GiBrain } from "react-icons/gi";
 
 function Post6() {
   return (
-    <div className="blog-post-container left">
+    <div className="blog-post-container notfirst left">
       <div className="timeline-icon left-icon">
         <div className="icon-wrapper GiBrain">
           <i className="icon">
