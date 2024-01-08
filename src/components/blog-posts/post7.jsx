@@ -4,7 +4,7 @@ import { FaMapMarkedAlt } from "react-icons/fa";
 
 function Post7() {
   return (
-    <div className="blog-post-container right">
+    <div className="blog-post-container notfirst right">
       <div className="timeline-icon right-icon">
         <div className="icon-wrapper FaMapMarkedAlt">
           <i className="icon FaMapMarkedAlt">
